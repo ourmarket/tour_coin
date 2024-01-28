@@ -1,0 +1,12 @@
+.container {
+  min-height: 100vh;
+  padding: 50px 50px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 30px;
+}
+.image {
+  width: 100%;
+}

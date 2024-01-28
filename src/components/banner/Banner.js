@@ -11,10 +11,25 @@ const menuAnimate = {
     transition: { duration: 1 },
   },
 };
+const fadeIn = {
+  initial: { opacity: 0 },
+  animate: {
+    opacity: 1,
+    transition: { duration: 1 },
+  },
+};
 
 export const Banner = ({ title, button }) => {
   return (
-    <section className={styles.banner_section} id="home">
+    <motion.section
+      className={styles.banner_section}
+      id="home"
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: { duration: 0.5 },
+      }}
+    >
       <div className={styles.banner_bg}>
         <video
           className={styles.video_bg}
@@ -44,6 +59,6 @@ export const Banner = ({ title, button }) => {
       </motion.div>
 
       <span className={styles.txt}>Scroll Down</span>
-    </section>
+    </motion.section>
   );
 };

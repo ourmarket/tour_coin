@@ -23,19 +23,7 @@ export const Section1 = ({ translations }) => {
   return (
     <section className={styles.container} id="tour_coin">
       <div className={styles.img}>
-        <video
-          className={styles.video_bg}
-          autoPlay
-          /* controls */
-          loop
-          muted
-          preload="true"
-        >
-          <source
-            type="video/mp4"
-            src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/PhotoReal_A_person_riding_a_jet_ski_in_the_ocean_0%20(1)_animation_LQKxRyrZe.mp4?updatedAt=1706060286814"
-          />
-        </video>
+        <div className={styles.bg}></div>
       </div>
       <div className={styles.wrapper}>
         <motion.h2

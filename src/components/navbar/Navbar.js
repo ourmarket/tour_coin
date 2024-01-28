@@ -6,7 +6,7 @@ import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const overlayVariants = {
   hidden: { opacity: 0 },
@@ -36,7 +36,16 @@ const Menu = ({ translate, setMobile }) => {
   } = translate;
   const [menu, setMenu] = useState(false);
   return (
-    <div className={styles.menu_mobile}>
+    <motion.div
+      className={styles.menu_mobile}
+      initial={{ opacity: 1, y: "-100%" }}
+      animate={{
+        opacity: 1,
+        y: "0%",
+        transition: { duration: 0.4 },
+      }}
+      exit={{ y: "-110%" }}
+    >
       <div className={styles.btn_close} onClick={() => setMobile(false)}>
         <IoMdClose size={"3rem"} />
       </div>
@@ -114,7 +123,7 @@ const Menu = ({ translate, setMobile }) => {
           </li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -145,9 +154,19 @@ export const Navbar = ({
   };
   return (
     <header>
-      {mobile && <Menu translate={translate} setMobile={setMobile} />}
+      <AnimatePresence>
+        {mobile && <Menu translate={translate} setMobile={setMobile} />}
+      </AnimatePresence>
 
-      <nav className={styles.navbar}>
+      <motion.nav
+        className={styles.navbar}
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+
+          transition: { duration: 0.5 },
+        }}
+      >
         <div className={styles.center}>
           <Link href={"/"}>
             <Image
@@ -195,7 +214,7 @@ export const Navbar = ({
         <div className={styles.links_mobile} onClick={() => setMobile(true)}>
           <IoMenu size={"3rem"} />
         </div>
-      </nav>
+      </motion.nav>
       <div className={menu ? styles.menu_active : styles.menu}>
         <ul>
           <li>

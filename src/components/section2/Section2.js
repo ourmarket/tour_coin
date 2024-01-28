@@ -26,10 +26,10 @@ export const Section2 = ({ translations }) => {
       <div className={styles.cards_container}>
         <motion.div
           className={styles.card_animation}
-          initial={{ opacity: 0, x: -20 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{
             opacity: 1,
-            x: 0,
+            y: 0,
             transition: { duration: 0.3, delay: 0.3 },
           }}
           viewport={{ once: true, amount: 0.6 }}
@@ -40,11 +40,11 @@ export const Section2 = ({ translations }) => {
         </motion.div>
         <motion.div
           className={styles.card_animation}
-          initial={{ opacity: 0, x: -20 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{
             opacity: 1,
-            x: 0,
-            transition: { duration: 0.3, delay: 0.5 },
+            y: 0,
+            transition: { duration: 0.3, delay: 0.6 },
           }}
           viewport={{ once: true, amount: 0.6 }}
         >
@@ -53,25 +53,25 @@ export const Section2 = ({ translations }) => {
 
         <motion.div
           className={styles.card_animation}
-          initial={{ opacity: 0, x: -20 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{
             opacity: 1,
-            x: 0,
-            transition: { duration: 0.3, delay: 0.7 },
+            y: 0,
+            transition: { duration: 0.3, delay: 0.9 },
           }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.6 }}
         >
           <Card title={title_5} text={text_5} icon={GoRepoForked} />
         </motion.div>
         <motion.div
           className={styles.card_animation}
-          initial={{ opacity: 0, x: -20 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{
             opacity: 1,
-            x: 0,
-            transition: { duration: 0.3, delay: 0.9 },
+            y: 0,
+            transition: { duration: 0.3, delay: 1.2 },
           }}
-          viewport={{ once: true, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.6 }}
         >
           <Card title={title_4} text={text_4} icon={GoSync} />
         </motion.div>
