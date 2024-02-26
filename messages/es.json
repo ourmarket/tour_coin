@@ -15,17 +15,17 @@
     "back": "Volver"
   },
   "section_1": {
-    "title_1": "¿Qué es un Tour Coin?",
-    "title_2": "¿Que ofrecen nuestros tokens?",
-    "text_1_1": "<code>Tour coin</code> Es una criptomoneda descentralizada un tipo de dinero digital que revoluciona tus experiencias de viaje. Impulsada por la tecnología blockchain y respaldada por la robusta red de Binance se utiliza para realizar compras, pagos y resguardo de valor, TourCoin te brinda la libertad de explorar el mundo de manera única y segura.",
-    "text_1_2": "Como ocurre con las criptomonedas, los tokens se benefician de las propiedades de la blockchain en que se emiten. Entre dichas propiedades figuran la transparencia, una rápida liquidación (settlement), ausencia de tiempos de inactividad y la divisibilidad.",
-    "text_2_1": "Invertir en <code>Tour coin</code> emitidos por nuestra empresa centrada en turismo, departamentos, servicios a turistas y bares en Celso Ramos, Brasil, ofrece varias ventajas significativas para los inversores.",
-    "text_2_2": "Esta inversion ofrece una oportunidad única para participar en el próspero sector turístico, aprovechando las ventajas de la tecnología blockchain y la tokenización de activos para mejorar la accesibilidad, transparencia y eficiencia en las transacciones financieras.",
+    "title_1": "¿Qué es un Tour Coin y Cómo funciona?",
+    "title_2": "¿Cómo comprar y utilizar Tour Coin?",
+    "text_1_1": "<code>Tour coin</code> es una criptomoneda descentralizada diseñada específicamente para la industria del turismo un tipo de dinero digital que revoluciona tus experiencias de viaje. Impulsada por la tecnología blockchain y respaldada por la robusta red de Binance se utiliza para realizar compras, pagos y resguardo de valor,",
+    "text_1_2": "Tour coin te brinda la libertad de explorar el mundo de manera única y segura.",
+    "text_2_1": "Los usuarios pueden adquirir Tour Coins a través de intercambios de criptomonedas o directamente desde la plataforma de PancakeSwap. Una vez adquiridos, los Tour Coins se almacenan en una billetera digital como la de MetaMask.",
+    "text_2_2": "Al utilizar Tour coin, los viajeros pueden disfrutar de un enfoque innovador para realizar pagos y transacciones en la industria turística, brindando una experiencia más fluida y gratificante. Viaja, sonríe y paga con TourCoin. ¡La felicidad se encuentra en cada TourCoin que posees!",
     "button": "Comprar"
   },
 
   "section_2": {
-    "advantages": "Ventajas",
+    "advantages": "Beneficios",
     "card_1": {
       "title": "Tokenización de Bienes Tangibles",
       "text": "Nuestra empresa tokeniza bienes tangibles como propiedades, servicios turísticos y establecimientos comerciales. Esto permite a los inversores acceder a inversiones en el próspero sector turístico en Celso Ramos, Brasil, de manera más accesible y diversificada."
@@ -39,8 +39,8 @@
       "text": "La cadena de bloques facilita una liquidación rápida y eficiente de transacciones. El despeje y liquidación automatizados permiten la finalización de operaciones en minutos, eliminando el tiempo de inactividad tradicional asociado con los mercados financieros convencionales."
     },
     "card_4": {
-      "title": "Disponibilidad Continua",
-      "text": "A diferencia de los mercados financieros tradicionales que operan en momentos específicos, los activos tokenizados están disponibles para el comercio las 24 horas del día, los 7 días de la semana. Esto proporciona flexibilidad para que los inversores participen en el mercado en cualquier momento."
+      "title": "Disponibilidad",
+      "text": "A diferencia de los mercados financieros tradicionales que operan en momentos específicos, Tour Coin están disponibles para el comercio las 24 horas del día, los 7 días de la semana. Esto proporciona flexibilidad para que los inversores participen en el mercado en cualquier momento."
     },
     "card_5": {
       "title": "Divisibilidad",
