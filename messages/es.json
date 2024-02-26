@@ -35,16 +35,16 @@
       "text": "Los tokens de seguridad se emiten en una cadena de bloques, proporcionando un libro de contabilidad público. Esto asegura transparencia en la gestión de tokens y permite a los inversores auditar fácilmente transacciones y emisiones de acciones."
     },
     "card_3": {
-      "title": "Liquidación Rápida",
-      "text": "La cadena de bloques facilita una liquidación rápida y eficiente de transacciones. El despeje y liquidación automatizados permiten la finalización de operaciones en minutos, eliminando el tiempo de inactividad tradicional asociado con los mercados financieros convencionales."
+      "title": "Valorización",
+      "text": "La demanda creciente de Tour Coin en el sector turístico puede resultar en una potencial valorización de la criptomoneda, ofreciendo oportunidades de inversión atractivas."
     },
     "card_4": {
-      "title": "Disponibilidad",
-      "text": "A diferencia de los mercados financieros tradicionales que operan en momentos específicos, Tour Coin están disponibles para el comercio las 24 horas del día, los 7 días de la semana. Esto proporciona flexibilidad para que los inversores participen en el mercado en cualquier momento."
+      "title": "Viajes Sin Fronteras",
+      "text": "¡Viajar nunca fue tan fácil! Tour Coin elimina las barreras en los pagos internacionales, permitiéndote disfrutar de tus viajes sin preocuparte por tasas de cambio y comisiones bancarias."
     },
     "card_5": {
-      "title": "Divisibilidad",
-      "text": "La tokenización permite la divisibilidad de activos de alto valor, como propiedades. Esto significa que los inversores pueden poseer fracciones de activos que de otra manera serían inaccesibles. Por ejemplo, una propiedad de $5 millones podría tokenizarse en unidades asequibles, haciendo la inversión más accesible y granular."
+      "title": "Descuentos",
+      "text": "Simplemente carga tus Tour Coins en tu billetera digital y desbloquea una amplia gama de experiencias de viaje usa tus monedas con nuestras alianzas y disfruta de descuentos exclusivos."
     },
     "card_6": {
       "title": "Derechos de Votación y Dividendos",
@@ -52,14 +52,14 @@
     }
   },
   "section_4": {
-    "title": "Nuestros activos",
+    "title": "Alianzas",
     "active_1": "departamentos",
     "active_2": "gastronomía",
     "active_3": "excursiones"
   },
   "section_3": {
-    "title": "Quienes somos",
-    "text": "Somos una empresa dedicada a proporcionar experiencias inolvidables en el ámbito del turismo y el entretenimiento. Nos destacamos por ofrecer una amplia gama de servicios que incluyen hospedajes de calidad, emocionantes juegos acuáticos y programas de entretenimiento diversificados. Trabajamos con pasión para convertirnos en el destino preferido de aquellos que buscan aventura, diversión y comodidad. Nuestra misión es crear recuerdos duraderos para nuestros clientes, ofreciendo instalaciones de hospedaje acogedoras, emocionantes juegos acuáticos y entretenimiento de calidad."
+    "title": "Ventajas",
+    "text": "Cada Tour Coin es único, no puede ser falsificado, duplicado ni alterado, Son convertibles a cualquier moneda de curso legal (pesos, dólares, euros), no ocupan espacio, así que no hay límite físico para almacenarlos o transferirlos, las operaciones se hacen sin intermediarios y con bajas comisiones de red, no hay días ni horarios Tour Coin funciona todo el tiempo y en todos lados, por la ingeniería de la red las cuentas no pueden ser congeladas, los pagos no pueden ser bloqueados ni cancelados, es un tipo de dinero digital con el que no se puede contraer deuda, su valor no depende de la inflación de un país."
   },
   "footer": {
     "title_1": "La empresa",
@@ -67,7 +67,7 @@
     "title_3": "Comprar token",
     "title_4": "Síguenos",
     "link_1": "Tour Coin",
-    "link_2": "Activos",
+    "link_2": "Alianzas",
     "link_3": "Nosotros",
     "link_4": "FAQ",
     "link_5": "Email",
