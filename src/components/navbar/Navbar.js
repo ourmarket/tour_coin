@@ -172,9 +172,9 @@ export const Navbar = ({
             <Link href={"/"}>
               <Image
                 className={styles.logo}
-                src="/logo_8.png"
+                src="/3.png"
                 alt="Logo"
-                width={50}
+                width={180}
                 height={50}
                 priority
               />

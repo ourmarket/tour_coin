@@ -23,40 +23,21 @@ export const Section1 = ({ translations }) => {
 
   return (
     <section className={styles.container} id="tour_coin">
-      <div className={styles.img}>
-        <img
-          src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/WhatsApp%20Image%202024-02-28%20at%2009.45.47%20(1)_oTtpbc2HU.jpg?updatedAt=1709225503220"
-          alt="tour_coin"
-        />
-      </div>
-      <div className={styles.wrapper}>
-        <motion.h2
-          initial={"initial"}
-          whileInView={"animate"}
-          viewport={{ amount: 0.2, once: true }}
-          variants={scrollAnimateUp}
-        >
-          {title1}
-        </motion.h2>
-        <motion.div
-          initial={"initial"}
-          whileInView={"animate"}
-          viewport={{ amount: 0.2, once: true }}
-          variants={scrollAnimateUp}
-        >
-          <p>{text_1_1}</p>
-
-          <p>{text_1_2}</p>
-        </motion.div>
-        <div className={styles.text_2}>
+      <div className={styles.limit}>
+        <div className={styles.img}>
+          <img
+            src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/coin_iPD8YDhZk.webp?updatedAt=1709241198340"
+            alt="tour_coin"
+          />
+        </div>
+        <div className={styles.wrapper}>
           <motion.h2
-            style={{ marginTop: "100px" }}
             initial={"initial"}
             whileInView={"animate"}
             viewport={{ amount: 0.2, once: true }}
             variants={scrollAnimateUp}
           >
-            {title2}
+            {title1}
           </motion.h2>
           <motion.div
             initial={"initial"}
@@ -64,9 +45,30 @@ export const Section1 = ({ translations }) => {
             viewport={{ amount: 0.2, once: true }}
             variants={scrollAnimateUp}
           >
-            <p>{text_2_1}</p>
-            <p>{text_2_2}</p>
+            <p>{text_1_1}</p>
+
+            <p>{text_1_2}</p>
           </motion.div>
+          <div className={styles.text_2}>
+            <motion.h2
+              style={{ marginTop: "100px" }}
+              initial={"initial"}
+              whileInView={"animate"}
+              viewport={{ amount: 0.2, once: true }}
+              variants={scrollAnimateUp}
+            >
+              {title2}
+            </motion.h2>
+            <motion.div
+              initial={"initial"}
+              whileInView={"animate"}
+              viewport={{ amount: 0.2, once: true }}
+              variants={scrollAnimateUp}
+            >
+              <p>{text_2_1}</p>
+              <p>{text_2_2}</p>
+            </motion.div>
+          </div>
         </div>
       </div>
     </section>

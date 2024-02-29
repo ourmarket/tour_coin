@@ -76,7 +76,7 @@ export const Banner = ({ title, button }) => {
                     >
                       <source
                         type="video/mp4"
-                        src="https://player.vimeo.com/external/182638846.hd.mp4?s=32bdf2fd96d97eda7e57476efdadb1a6cc536cd2&amp;profile_id=119"
+                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/WhatsApp%20Video%202024-02-29%20at%2016.28.42_44tSAUIKp.mp4?updatedAt=1709240267366"
                       />
                     </video>
                   </div>
@@ -90,7 +90,7 @@ export const Banner = ({ title, button }) => {
                     >
                       <source
                         type="video/mp4"
-                        src="https://player.vimeo.com/external/182638846.hd.mp4?s=32bdf2fd96d97eda7e57476efdadb1a6cc536cd2&amp;profile_id=119"
+                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/WhatsApp%20Video%202024-02-29%20at%2017.43.40_NAiCGoPzP.mp4?updatedAt=1709240237086"
                       />
                     </video>
                   </div>
@@ -104,7 +104,7 @@ export const Banner = ({ title, button }) => {
                     >
                       <source
                         type="video/mp4"
-                        src="https://player.vimeo.com/external/182638846.hd.mp4?s=32bdf2fd96d97eda7e57476efdadb1a6cc536cd2&amp;profile_id=119"
+                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/WhatsApp%20Video%202024-02-29%20at%2018.22.41_5MZuVsXDX.mp4?updatedAt=1709242961619"
                       />
                     </video>
                   </div>

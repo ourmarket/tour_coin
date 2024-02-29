@@ -4,16 +4,27 @@ import { Section1 } from "./Section1";
 export const Section1_index = () => {
   const t = useTranslations("section_1");
 
-  const title1 = t("title_1");
-  const title2 = t("title_2");
+  const title1 = t.rich("title_1", {
+    code: (chunks) => <code className="strong">{chunks}</code>,
+  });
+  const title2 = t.rich("title_2", {
+    code: (chunks) => <code className="strong">{chunks}</code>,
+  });
+
   const text_1_1 = t.rich("text_1_1", {
     code: (chunks) => <code className="strong">{chunks}</code>,
   });
-  const text_1_2 = t("text_1_2");
+  const text_1_2 = t.rich("text_1_2", {
+    code: (chunks) => <code className="strong">{chunks}</code>,
+  });
+
   const text_2_1 = t.rich("text_2_1", {
     code: (chunks) => <code className="strong">{chunks}</code>,
   });
-  const text_2_2 = t("text_2_2");
+  const text_2_2 = t.rich("text_2_2", {
+    code: (chunks) => <code className="strong">{chunks}</code>,
+  });
+
   const button = t("button");
 
   const translations = {
