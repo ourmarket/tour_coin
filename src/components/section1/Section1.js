@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import styles from "./section1.module.css";
@@ -23,7 +24,10 @@ export const Section1 = ({ translations }) => {
   return (
     <section className={styles.container} id="tour_coin">
       <div className={styles.img}>
-        <div className={styles.bg}></div>
+        <img
+          src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/WhatsApp%20Image%202024-02-28%20at%2009.45.47%20(1)_oTtpbc2HU.jpg?updatedAt=1709225503220"
+          alt="tour_coin"
+        />
       </div>
       <div className={styles.wrapper}>
         <motion.h2
@@ -64,15 +68,6 @@ export const Section1 = ({ translations }) => {
             <p>{text_2_2}</p>
           </motion.div>
         </div>
-
-        <motion.button
-          initial={"initial"}
-          whileInView={"animate"}
-          viewport={{ amount: 0.2, once: true }}
-          variants={scrollAnimateUp}
-        >
-          {button}
-        </motion.button>
       </div>
     </section>
   );

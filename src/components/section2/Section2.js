@@ -11,7 +11,7 @@ import { GoBook } from "react-icons/go"; */
 const Card = ({ title, text, icon: Icon }) => {
   return (
     <article className={styles.card}>
-      {Icon && <Icon size="2em" color="#1799a8" />}
+      {Icon && <Icon size="2em" color="#eecd02" />}
       <h3>{title}</h3>
       <p>{text}</p>
     </article>

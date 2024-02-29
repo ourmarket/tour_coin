@@ -167,52 +167,58 @@ export const Navbar = ({
           transition: { duration: 0.5 },
         }}
       >
-        <div className={styles.center}>
-          <Link href={"/"}>
-            <Image
-              className={styles.logo}
-              src="/logo_8.png"
-              alt="Logo"
-              width={50}
-              height={50}
-              priority
-            />
-          </Link>
-        </div>
-        <div>
-          <ul className={styles.links}>
-            <li>
-              <Link href="/#home" onClick={() => setMobile(false)}>
-                {Home}
-              </Link>
-            </li>
-            <li>
-              <Link href="/#tour_coin" onClick={() => setMobile(false)}>
-                {TourCoin}
-              </Link>
-            </li>
-            <li>
-              <Link href="/#actives" onClick={() => setMobile(false)}>
-                {Actives}
-              </Link>
-            </li>
-            <li>
-              <Link href="/#about" onClick={() => setMobile(false)}>
-                {About}
-              </Link>
-            </li>
+        <div className={styles.container}>
+          <div className={styles.center}>
+            <Link href={"/"}>
+              <Image
+                className={styles.logo}
+                src="/logo_8.png"
+                alt="Logo"
+                width={50}
+                height={50}
+                priority
+              />
+            </Link>
+          </div>
+          <div>
+            <ul className={styles.links}>
+              <li>
+                <Link href="/#home" onClick={() => setMobile(false)}>
+                  {Home}
+                </Link>
+              </li>
+              <li>
+                <Link href="/#tour_coin" onClick={() => setMobile(false)}>
+                  {TourCoin}
+                </Link>
+              </li>
+              <li>
+                <Link href="/#actives" onClick={() => setMobile(false)}>
+                  {Actives}
+                </Link>
+              </li>
+              <li>
+                <Link href="/#about" onClick={() => setMobile(false)}>
+                  {About}
+                </Link>
+              </li>
 
-            <li
-              style={{ display: "flex", alignItems: "center" }}
-              onClick={() => setMenu(!menu)}
-            >
-              {Language}
-              <GoChevronRight />
-            </li>
-          </ul>
-        </div>
-        <div className={styles.links_mobile} onClick={() => setMobile(true)}>
-          <IoMenu size={"3rem"} />
+              <li
+                style={{ display: "flex", alignItems: "center" }}
+                onClick={() => setMenu(!menu)}
+                className={styles.btn_lang}
+              >
+                {Language}
+                <GoChevronRight />
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button className={styles.btn_buy}>Como comprar</button>
+          </div>
+          <div className={styles.links_mobile} onClick={() => setMobile(true)}>
+            <IoMenu size={"3rem"} />
+          </div>
         </div>
       </motion.nav>
       <div className={menu ? styles.menu_active : styles.menu}>

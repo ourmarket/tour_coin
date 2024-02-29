@@ -1,5 +1,5 @@
 .container {
-  max-width: 1170px;
+  max-width: 1400px;
   margin: auto;
 }
 .row {
@@ -8,7 +8,7 @@
 }
 
 .footer {
-  background-color: var(--color-black2);
+  background-color: var(--color-black3);
   padding: 70px 0;
   margin: 0 50px 50px 50px;
 }
