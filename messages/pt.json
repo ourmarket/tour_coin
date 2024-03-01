@@ -1,66 +1,84 @@
 {
   "banner": {
-    "title": "A criptomoeda que transforma suas experiências em momentos inesquecíveis.",
+    "title": "Onde cada criptomoeda conta uma história de aventura. Junte-se a nós na vanguarda da revolução das viagens e descubra um mundo de possibilidades, sua jornada, sua moeda, sua <code>Tour Coin</code>.",
     "button": "Comprar"
   },
   "navbar": {
-    "Home": "Começar",
+    "Home": "Início",
     "TourCoin": "Tour Coin",
-    "About": "Sobre",
-    "Actives": "Alianças",
-    "Language": "Linguagem",
+    "About": "Missão",
+    "Actives": "Experiências",
+    "Language": "Idioma",
     "Spanish": "Espanhol",
     "English": "Inglês",
     "Portuguese": "Português",
-    "back": "Volte"
+    "back": "Voltar",
+    "buy": "Como comprar"
   },
   "section_1": {
-    "title_1": "O que é um Tour Coin e como funciona?",
-    "title_2": "Como comprar e usar o Tour Coin?",
-    "text_1_1": "<code>Tour coin</code> É uma criptomoeda descentralizada projetada especificamente para a indústria do turismo, um tipo de dinheiro digital que revoluciona suas experiências de viagem. Impulsionada pela tecnologia blockchain e respaldada pela robusta rede da Binance, ela é usada para compras, pagamentos e proteção de valor.",
-    "text_1_2": "Tour Coin oferece a liberdade de explorar o mundo de maneira única e segura.",
-    "text_2_1": "Os usuários podem adquirir Tour Coins através de câmbios de criptomoedas ou diretamente na plataforma PancakeSwap. Uma vez adquiridos, os Tour Coins são armazenados em uma carteira digital, como a MetaMask.",
-    "text_2_2": "Ao utilizar o Tour Coin, os viajantes podem desfrutar de uma abordagem inovadora para realizar pagamentos e transações na indústria do turismo, proporcionando uma experiência mais fluida e gratificante. Viaje, sorria e pague com o TourCoin. A felicidade está em cada TourCoin que você possui!",
+    "title_1": "O que é uma <code>Tour Coin</code> e como funciona?",
+    "title_2": "Como comprar e usar a <code>Tour Coin</code>?",
+    "text_1_1": "A <code>Tour Coin</code> é uma criptomoeda descentralizada projetada especificamente para a indústria do turismo, um tipo de dinheiro digital que revoluciona suas experiências de viagem. Impulsionada pela tecnologia blockchain e apoiada pela robusta rede da Binance, é usada para compras, pagamentos e armazenamento de valor.",
+    "text_1_2": "A <code>Tour Coin</code> oferece a liberdade de explorar o mundo de maneira única e segura.",
+    "text_2_1": "Os usuários podem adquirir a <code>Tour Coin</code> através de exchanges de criptomoedas ou diretamente na plataforma PancakeSwap. Uma vez adquiridas, as <code>Tour Coin</code>s são armazenadas em uma carteira digital como a MetaMask.",
+    "text_2_2": "Ao usar a <code>Tour Coin</code>, os viajantes podem desfrutar de uma abordagem inovadora para fazer pagamentos e transações na indústria do turismo, proporcionando uma experiência mais suave e gratificante. Viaje, sorria e pague com <code>Tour Coin</code>. A felicidade está em cada <code>Tour Coin</code> que você possui.",
     "button": "Comprar"
   },
   "section_2": {
-    "advantages": "Beneficios",
-
+    "small": "Benefícios",
+    "h2": "Benefícios de usar a <code>Tour Coin</code>",
+    "p_1": "Esta criptomoeda oferece os melhores benefícios para você",
     "card_1": {
-      "title": "Valorização",
-      "text": "Nossa empresa tokeniza ativos tangíveis, como propriedades, serviços turísticos e estabelecimentos comerciais. Isso permite que investidores acessem investimentos no próspero setor de turismo em Celso Ramos, Brasil, de maneira mais acessível e diversificada."
+      "title": "Tokenização de Ativos Tangíveis",
+      "text": "Nossa empresa tokeniza ativos tangíveis como propriedades, serviços turísticos e estabelecimentos comerciais. Isso permite que os investidores acessem investimentos no próspero setor de turismo em Celso Ramos, Brasil, de maneira mais acessível e diversificada."
     },
     "card_2": {
       "title": "Transparência",
-      "text": "Tokens de segurança são emitidos em uma blockchain, fornecendo um livro público. Isso garante transparência na gestão de tokens e permite que investidores auditem facilmente transações e emissões de ações."
+      "text": "Tokens de segurança são emitidos em uma blockchain, fornecendo um livro-razão público. Isso garante transparência na gestão de tokens e permite que os investidores auditem facilmente transações e emissões de ações."
     },
     "card_3": {
       "title": "Valorização",
-      "text": "A crescente demanda por Tour Coin no setor turístico pode resultar em uma potencial valorização da criptomoeda, oferecendo oportunidades de investimento atrativas."
+      "text": "A crescente demanda pela <code>Tour Coin</code> no setor de turismo pode resultar em uma potencial valorização da criptomoeda, oferecendo oportunidades de investimento atrativas."
     },
     "card_4": {
-      "title": "Viagens sem Fronteiras",
-      "text": "Viajar nunca foi tão fácil! A Tour Coin elimina as barreiras nos pagamentos internacionais, permitindo que você aproveite suas viagens sem se preocupar com taxas de câmbio e comissões bancárias."
+      "title": "Viagens Sem Fronteiras",
+      "text": "Viajar nunca foi tão fácil! A <code>Tour Coin</code> elimina as barreiras nos pagamentos internacionais, permitindo que você aproveite suas viagens sem se preocupar com taxas de câmbio e tarifas bancárias."
     },
     "card_5": {
       "title": "Descontos",
-      "text": "Basta carregar seus Tour Coins em sua carteira digital e desbloquear uma ampla gama de experiências de viagem. Use suas moedas com nossas parcerias e aproveite descontos exclusivos."
+      "text": "Basta carregar suas <code>Tour Coin</code>s em sua carteira digital e desbloquear uma ampla gama de experiências de viagem. Use suas moedas com nossas parcerias e aproveite descontos exclusivos."
     },
     "card_6": {
       "title": "Direitos de Voto e Dividendos",
-      "text": "Nossos tokens de segurança podem ser projetados para conceder aos investidores direitos de voto e dividendos, semelhantes às ações comuns. Isso dá aos investidores um papel ativo nas decisões de negócios e possíveis fluxos de renda regulares."
+      "text": "Nossos tokens de segurança podem ser projetados para conceder aos investidores direitos de voto e dividendos, semelhantes a ações comuns. Isso dá aos investidores um papel ativo nas decisões empresariais e possíveis fluxos de renda regulares."
     }
   },
-
-  "section_4": {
-    "title": "Alianças",
-    "active_1": "Apartamentos",
-    "active_2": "Gastronomia",
-    "active_3": "Excursões"
-  },
   "section_3": {
-    "title": "Vantagens",
-    "text": "Cada Tour Coin é único, não pode ser falsificado, duplicado ou alterado. São convertíveis em qualquer moeda de curso legal (pesos, dólares, euros). Não ocupam espaço, então não há limite físico para armazená-los ou transferi-los. As operações são feitas sem intermediários e com baixas taxas de rede. Não há dias ou horários, o Tour Coin funciona o tempo todo e em todos os lugares. Devido à engenharia da rede, as contas não podem ser congeladas, os pagamentos não podem ser bloqueados ou cancelados. É um tipo de dinheiro digital com o qual você não pode contrair dívidas, e seu valor não depende da inflação de um país."
+    "small": "Missão e Visão",
+    "title": "Um vislumbre do futuro",
+    "title_1": "Missão",
+    "title_2": "Visão",
+    "title_3": "Valores",
+    "text_1": "Facilitar experiências de viagem felizes e sem preocupações, oferecendo uma criptomoeda única, <code>Tour Coin</code>. Queremos ser a chave que desbloqueia momentos inesquecíveis e sorrisos em cada destino.",
+    "text_2": "Revitalizar a alegria nas viagens através da <code>Tour Coin</code>, tornando-se a moeda da felicidade para explorar o mundo.",
+    "text_3_1": "✔ Felicidade em Primeiro Lugar: Colocamos a alegria do viajante no centro de nossas ações.",
+    "text_3_2": "✔ Empoderamento Financeiro: Fornecemos liberdade e felicidade através de transações seguras e transparentes.",
+    "text_3_3": "✔ Conexão Humana: Buscamos enriquecer a vida das pessoas conectando-as com experiências autênticas."
+  },
+  "section_4": {
+    "small": "Experiências",
+    "title": "Algumas experiências vividas",
+    "p_1": "Oferecemos atenção ágil e personalizada, apoiada na experiência e capacidade técnica de uma equipe especializada."
+  },
+  "section_5": {
+    "small": "Como comprar",
+    "title": "Data de lançamento da <code>Tour Coin</code>",
+    "p_1": "A <code>Tour Coin</code> será oficialmente lançada à venda em 5 de abril às 21h.",
+    "p_2": "A felicidade está em cada <code>Tour Coin</code> que você possui! Experimente viagens inovadoras e emocionantes com nossa moeda única. Com a <code>Tour Coin</code>, o mundo inteiro está ao seu alcance. Invista em sua felicidade e explore novos horizontes conosco! #ViagensSemLimites #ViagensInovadoras",
+    "days": "Dias",
+    "hours": "Horas",
+    "minutes": "Minutos",
+    "seconds": "Segundos"
   },
   "footer": {
     "title_1": "A Empresa",
@@ -68,10 +86,10 @@
     "title_3": "Comprar Token",
     "title_4": "Siga-nos",
     "link_1": "Tour Coin",
-    "link_2": "Alianças",
-    "link_3": "Vantagens",
+    "link_2": "Parcerias",
+    "link_3": "Sobre Nós",
     "link_4": "FAQ",
-    "link_5": "E-mail",
+    "link_5": "Email",
     "link_6": "WhatsApp",
     "link_7": "Telegram"
   }

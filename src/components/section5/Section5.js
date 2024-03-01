@@ -3,14 +3,16 @@
 import styles from "./section5.module.css";
 import { useState, useEffect } from "react";
 
-export const Section5 = () => {
+export const Section5 = ({ translations }) => {
+  const { small, title, p_1, p_2, days_t, hours_t, minutes_t, seconds_t } =
+    translations;
   const [days, setDays] = useState("00");
   const [hours, setHours] = useState("00");
   const [minutes, setMinutes] = useState("00");
   const [seconds, setSeconds] = useState("00");
 
   useEffect(() => {
-    const countDownDate = new Date("Mar 30, 2024 00:00:00").getTime();
+    const countDownDate = new Date("Apr 5, 2024 21:00:00").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -43,46 +45,38 @@ export const Section5 = () => {
   }, []);
 
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="buy">
       <div className={styles.limit}>
-        <small>Como comprar</small>
-        <h2>
-          Fecha de salida de <strong>Tour Coin</strong>
-        </h2>
-        <p>Cada vez falta menos para que puedas comprar la criptomoneda</p>
+        <small>{small}</small>
+        <h2>{title}</h2>
+        <p>{p_1}</p>
         <div className={styles.counters}>
           <div>
             <span className={styles.counter} id="days">
               {days}
             </span>
-            <p className={styles.date}>Days</p>
+            <p className={styles.date}>{days_t}</p>
           </div>
           <div>
             <span className={styles.counter} id="hours">
               {hours}
             </span>
-            <p className={styles.date}>Hours</p>
+            <p className={styles.date}>{hours_t}</p>
           </div>
           <div>
             <span className={styles.counter} id="minutes">
               {minutes}
             </span>
-            <p className={styles.date}>Minutes</p>
+            <p className={styles.date}>{minutes_t}</p>
           </div>
           <div>
             <span className={styles.counter} id="seconds">
               {seconds}
             </span>
-            <p className={styles.date}>Seconds</p>
+            <p className={styles.date}>{seconds_t}</p>
           </div>
         </div>
-        <p>
-          ¡La felicidad se encuentra en cada Tour Coin que posees! Experimenta
-          viajes innovadores y emocionantes con nuestra moneda única.
-          <br /> Con Tour Coin, el mundo entero está a tu alcance. ¡Invierte en
-          tu felicidad y explora nuevos horizontes con nosotros!
-          <strong> #ViajesSinLimites #ViajesInnovadores</strong>
-        </p>
+        <p>{p_2}</p>
       </div>
     </section>
   );

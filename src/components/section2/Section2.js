@@ -16,18 +16,14 @@ const Card = ({ title, text, icon: Icon }) => {
   );
 };
 export const Section2 = ({ translations }) => {
-  const { advantages, title_3, title_4, title_5, text_3, text_5, text_4 } =
+  const { small, h2, p_1, title_3, title_4, title_5, text_3, text_5, text_4 } =
     translations;
   return (
     <section className={styles.container}>
       <div className={styles.limit}>
-        <small>Beneficios</small>
-        <h2>
-          Beneficios de usar <strong>Tour Coin</strong>
-        </h2>
-        <p className={styles.sub_title}>
-          Esta criptomoneda te brinda los mejores beneficios
-        </p>
+        <small>{small}</small>
+        <h2>{h2}</h2>
+        <p className={styles.sub_title}>{p_1}</p>
 
         <div className={styles.cards_container}>
           <div className={styles.card_animation}>

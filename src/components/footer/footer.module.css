@@ -1,6 +1,7 @@
 .container {
   max-width: 1400px;
   margin: auto;
+  padding-bottom: 50px;
 }
 .row {
   display: flex;
@@ -9,8 +10,6 @@
 
 .footer {
   background-color: var(--color-black3);
-  padding: 70px 0;
-  margin: 0 50px 50px 50px;
 }
 .footerCol {
   width: 25%;
@@ -73,6 +72,12 @@
 .footerCol .socialLinks a:hover {
   color: #24262b;
   background-color: #ffffff;
+}
+.made {
+  background-color: #24262b;
+  color: var(--color-white);
+  padding: 10px 0;
+  text-align: center;
 }
 
 /*responsive*/

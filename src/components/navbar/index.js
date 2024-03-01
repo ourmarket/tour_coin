@@ -15,6 +15,7 @@ export const Navbar_index = () => {
       English={t("English")}
       Portuguese={t("Portuguese")}
       back={t("back")}
+      buy={t("buy")}
     />
   );
 };

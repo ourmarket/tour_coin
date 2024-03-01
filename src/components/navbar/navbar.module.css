@@ -35,6 +35,11 @@
   border: none;
   cursor: pointer;
 }
+.btn_buy a {
+  color: var(--color-black);
+  cursor: pointer;
+  font-size: 16px;
+}
 .btn_lang {
   background-color: var(--color-yellow);
   padding: 7px;
@@ -84,7 +89,7 @@
 .menu_active {
   border-top: 1px solid #4a4a4ac4;
   border-bottom: 1px solid #4a4a4ac4;
-  position: absolute;
+  position: fixed;
   top: 70px;
   left: 0px;
   right: 0px;

@@ -137,6 +137,7 @@ export const Navbar = ({
   English,
   Portuguese,
   back,
+  buy,
 }) => {
   const [menu, setMenu] = useState(false);
   const [mobile, setMobile] = useState(false);
@@ -151,6 +152,7 @@ export const Navbar = ({
     English,
     Portuguese,
     back,
+    buy,
   };
   return (
     <header>
@@ -214,7 +216,9 @@ export const Navbar = ({
             </ul>
           </div>
           <div>
-            <button className={styles.btn_buy}>Como comprar</button>
+            <button className={styles.btn_buy}>
+              <Link href="/#buy">{buy}</Link>
+            </button>
           </div>
           <div className={styles.links_mobile} onClick={() => setMobile(true)}>
             <IoMenu size={"3rem"} />

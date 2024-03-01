@@ -35,7 +35,8 @@ body {
   position: relative;
   z-index: -1;
 }
-html {
+html,
+body {
   scroll-behavior: smooth;
 }
 ul {
@@ -46,6 +47,7 @@ a {
   text-decoration: none;
 }
 .strong {
-  font-weight: 900;
+  font-weight: bold;
   color: var(--color-yellow);
+  font-family: var(--font_4);
 }

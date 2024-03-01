@@ -1,10 +1,10 @@
 .container {
-  padding: 100px 50px;
   padding-top: 0px;
 }
 .limit {
   max-width: 1400px;
   margin: 0 auto;
+  padding-top: 100px;
 }
 .limit h2 {
   font-family: var(--font_4);

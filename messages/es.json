@@ -6,13 +6,14 @@
   "navbar": {
     "Home": "Inicio",
     "TourCoin": "Tour Coin",
-    "About": "Nosotros",
-    "Actives": "Alianzas",
+    "About": "Misión",
+    "Actives": "Experiencias",
     "Language": "Lenguaje",
     "Spanish": "Español",
     "English": "Ingles",
     "Portuguese": "Portugués",
-    "back": "Volver"
+    "back": "Volver",
+    "buy": "Como comprar"
   },
   "section_1": {
     "title_1": "¿Qué es un <code>Tour coin</code> y cómo funciona?",
@@ -25,7 +26,9 @@
   },
 
   "section_2": {
-    "advantages": "Beneficios",
+    "small": "Beneficios",
+    "h2": "Beneficios de usar <code>Tour Coin</code>",
+    "p_1": "Esta criptomoneda te brinda los mejores beneficios",
     "card_1": {
       "title": "Tokenización de Bienes Tangibles",
       "text": "Nuestra empresa tokeniza bienes tangibles como propiedades, servicios turísticos y establecimientos comerciales. Esto permite a los inversores acceder a inversiones en el próspero sector turístico en Celso Ramos, Brasil, de manera más accesible y diversificada."
@@ -51,15 +54,34 @@
       "text": "Nuestros tokens de seguridad pueden diseñarse para otorgar a los inversores derechos de voto y dividendos, similares a las acciones comunes. Esto brinda a los inversores un papel activo en las decisiones empresariales y posibles flujos de ingresos regulares."
     }
   },
-  "section_4": {
-    "title": "Alianzas",
-    "active_1": "departamentos",
-    "active_2": "gastronomía",
-    "active_3": "excursiones"
-  },
+
   "section_3": {
-    "title": "Ventajas",
-    "text": "Cada Tour Coin es único, no puede ser falsificado, duplicado ni alterado, Son convertibles a cualquier moneda de curso legal (pesos, dólares, euros), no ocupan espacio, así que no hay límite físico para almacenarlos o transferirlos, las operaciones se hacen sin intermediarios y con bajas comisiones de red, no hay días ni horarios Tour Coin funciona todo el tiempo y en todos lados, por la ingeniería de la red las cuentas no pueden ser congeladas, los pagos no pueden ser bloqueados ni cancelados, es un tipo de dinero digital con el que no se puede contraer deuda, su valor no depende de la inflación de un país."
+    "small": "Misión y vision",
+    "title": "Una mirada al futuro",
+    "title_1": "Misión",
+    "title_2": "Visión",
+    "title_3": "Valores",
+    "text_1": "Facilitar experiencias de viaje felices y sin preocupaciones al ofrecer una criptomoneda única, <code>Tour Coin</code>. Queremos ser la llave que desbloquea momentos inolvidables y sonrisas en cada destino.",
+    "text_2": "Revitalizar la alegría en los viajes a través de <code>Tour Coin</code>, convirtiéndonos en la moneda de la felicidad para explorar el mundo.",
+    "text_3_1": "✔ Felicidad Primero: Colocamos la alegría del viajero en el centro de nuestras acciones.",
+    "text_3_2": "✔ Empoderamiento Financiero: Brindamos libertad y felicidad a través de transacciones seguras y transparentes.",
+    "text_3_3": "✔ Conexión Humana: Buscamos enriquecer la vida de las personas al conectarlas con experiencias auténticas."
+  },
+
+  "section_4": {
+    "small": "Experiencias",
+    "title": "Algunas experiencias vividas",
+    "p_1": "Ofrecemos una atención ágil y personalizada, apoyada en la experiencia y capacidad técnica de un equipo especializado."
+  },
+  "section_5": {
+    "small": "Como comprar",
+    "title": "Fecha de salida de <code>Tour Coin</code>",
+    "p_1": "<code>Tour Coin</code> saldrá oficialmente a la venta el 5 de abril a las 21hs.",
+    "p_2": "¡La felicidad se encuentra en cada <code>Tour Coin</code> que posees! Experimenta viajes innovadores y emocionantes con nuestra moneda única. Con <code>Tour Coin</code>, el mundo entero está a tu alcance. ¡Invierte en tu felicidad y explora nuevos horizontes con nosotros! <code> #ViajesSinLimites #ViajesInnovadores</code>",
+    "days": "Días",
+    "hours": "Horas",
+    "minutes": "Minutos",
+    "seconds": "Segundos"
   },
   "footer": {
     "title_1": "La empresa",

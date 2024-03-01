@@ -11,6 +11,7 @@
 .limit {
   max-width: 1400px;
   display: flex;
+  padding-top: 70px;
 }
 .img {
   width: 50%;

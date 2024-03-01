@@ -4,16 +4,14 @@ import { Section4 } from "./Section4";
 export const Section4_index = () => {
   const t = useTranslations("section_4");
 
+  const small = t("small");
   const title = t("title");
-  const active_1 = t("active_1");
-  const active_2 = t("active_2");
-  const active_3 = t("active_3");
+  const p_1 = t("p_1");
 
   const translations = {
+    small,
     title,
-    active_1,
-    active_2,
-    active_3,
+    p_1,
   };
 
   return <Section4 translations={translations} />;

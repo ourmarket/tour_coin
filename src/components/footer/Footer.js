@@ -81,6 +81,15 @@ export const Footer = () => {
           </div>
         </div>
       </div>
+      <div className={styles.made}>
+        <small>
+          {" "}
+          &copy; {new Date().getFullYear()}, made with ❤ by{" "}
+          <a target="_blank" href="https://www.ourmarket.com.ar">
+            OurMarket
+          </a>
+        </small>
+      </div>
     </footer>
   );
 };

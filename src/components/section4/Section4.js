@@ -8,15 +8,12 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 export const Section4 = ({ translations }) => {
-  const { title, active_1, active_2, active_3 } = translations;
+  const { small, title, p_1 } = translations;
   return (
     <section className={styles.container} id="actives">
-      <small>Experiencias</small>
-      <h2>Algunas experiencias vividas</h2>
-      <p>
-        Ofrecemos una atención ágil y personalizada, apoyada en la experiencia y
-        <br /> capacidad técnica de un equipo especializado.
-      </p>
+      <small>{small}</small>
+      <h2>{title}</h2>
+      <p>{p_1}</p>
       <div>
         <Swiper
           spaceBetween={0}
