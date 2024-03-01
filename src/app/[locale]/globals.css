@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;700&family=Teko:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 :root {
   --color-white: #f1f1f1;
   --color-white2: #f8f8fa;
@@ -17,6 +18,7 @@
   --font_2: "Anton", sans-serif;
   --font_3: "Roboto", sans-serif;
   --font_4: "Rubik", sans-serif;
+  --font_5: "Orbitron", sans-serif;
 }
 
 * {

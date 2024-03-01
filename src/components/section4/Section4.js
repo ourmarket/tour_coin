@@ -28,8 +28,6 @@ export const Section4 = ({ translations }) => {
             reverseDirection: true,
           }}
           modules={[Autoplay]}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
             <div className={styles.img_container}>
@@ -99,6 +97,7 @@ export const Section4 = ({ translations }) => {
             </div>
           </SwiperSlide>
         </Swiper>
+
         <Swiper
           spaceBetween={0}
           slidesPerView={6}
@@ -109,8 +108,6 @@ export const Section4 = ({ translations }) => {
             /*  reverseDirection: true, */
           }}
           modules={[Autoplay]}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
             <div className={styles.img_container}>

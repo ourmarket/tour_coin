@@ -17,7 +17,7 @@ export default function Home() {
       <Section2_index />
       <Section4_index />
       <Section3_index />
-      {/*  <Section5_index /> */}
+      <Section5_index />
       <Footer />
     </main>
   );
