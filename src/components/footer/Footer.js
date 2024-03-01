@@ -49,10 +49,10 @@ export const Footer = () => {
             <h4>{t("title_3")}</h4>
             <ul>
               <li>
-                <a href="/">binance 1</a>
+                <a href="/">PancakeSwap</a>
               </li>
               <li>
-                <a href="/">binance 2</a>
+                <a href="/">MetaMask</a>
               </li>
               <li>
                 <a href="/">binance 3</a>
