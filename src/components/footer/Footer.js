@@ -49,13 +49,22 @@ export const Footer = () => {
             <h4>{t("title_3")}</h4>
             <ul>
               <li>
-                <a href="/">PancakeSwap</a>
+                <a href="https://pancakeswap.finance/" target="_blank">
+                  PancakeSwap
+                </a>
               </li>
               <li>
-                <a href="/">MetaMask</a>
+                <a href="https://metamask.io/" target="_blank">
+                  MetaMask
+                </a>
               </li>
               <li>
-                <a href="/">binance 3</a>
+                <a
+                  href="https://bscscan.com/address/0x04d228b15111db88729735075dcf6a9b02e6a1b1#events"
+                  target="_blank"
+                >
+                  BscScan
+                </a>
               </li>
               <li>
                 <a href="/">binance 4</a>
@@ -65,16 +74,19 @@ export const Footer = () => {
           <div className={styles.footerCol}>
             <h4>{t("title_4")}</h4>
             <div className={styles.socialLinks}>
-              <a href="www.google.com">
+              <a
+                href="https://www.facebook.com/profile.php?id=61556760126525"
+                target="_blank"
+              >
                 <FaFacebookF size="1.4em" />
               </a>
-              <a href="www.google.com">
+              <a href="https://www.google.com" target="_blank">
                 <FaInstagram size="1.4em" />
               </a>
-              <a href="www.google.com">
+              <a href="https://www.google.com" target="_blank">
                 <FaTiktok size="1.4em" />
               </a>
-              <a href="www.google.com">
+              <a href="https://www.google.com" target="_blank">
                 <FaXTwitter size="1.4em" />
               </a>
             </div>
