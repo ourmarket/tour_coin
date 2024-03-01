@@ -2,91 +2,182 @@
 /* eslint-disable @next/next/no-img-element */
 
 import styles from "./section4.module.css";
-import { motion } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
 
 export const Section4 = ({ translations }) => {
   const { title, active_1, active_2, active_3 } = translations;
   return (
     <section className={styles.container} id="actives">
-      <h2>{title}</h2>
+      <small>Experiencias</small>
+      <h2>Algunas experiencias vividas</h2>
+      <p>
+        Ofrecemos una atención ágil y personalizada, apoyada en la experiencia y
+        <br /> capacidad técnica de un equipo especializado.
+      </p>
       <div>
-        <div className={styles.cards_container}>
-          <div className={styles.card}>
-            <motion.h4
-              initial={{ opacity: 0, x: "-50%", y: "40%" }}
-              whileInView={{
-                opacity: 1,
-                x: "-50%",
-                y: "-50%",
-                transition: {
-                  duration: 2,
-                  delay: 0.3,
-                  type: "spring",
-                  bounce: 0.4,
-                },
-              }}
-              viewport={{ once: false, amount: 0.6 }}
-            >
-              {active_1}
-            </motion.h4>
+        <Swiper
+          spaceBetween={0}
+          slidesPerView={6}
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+            reverseDirection: true,
+          }}
+          modules={[Autoplay]}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          <SwiperSlide>
             <div className={styles.img_container}>
               <img
-                src="https://static.wixstatic.com/media/74f558_993f041afc4045c69c824d6022d78ca0~mv2_d_4000_2667_s_4_2.jpeg"
-                alt="imagen"
+                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/DSC03239_VsUbHv6BAe.webp?updatedAt=1709248763956"
+                alt="Beach Celso Ramos"
               />
             </div>
-          </div>
-          <div className={styles.card}>
-            <motion.h4
-              initial={{ opacity: 0, x: "-50%", y: "40%" }}
-              whileInView={{
-                opacity: 1,
-                x: "-50%",
-                y: "-50%",
-                transition: {
-                  duration: 2,
-                  delay: 0.6,
-                  type: "spring",
-                  bounce: 0.4,
-                },
-              }}
-              viewport={{ once: false, amount: 0.2 }}
-            >
-              {active_2}
-            </motion.h4>
+          </SwiperSlide>
+          <SwiperSlide>
             <div className={styles.img_container}>
               <img
-                src="https://www.abasturhub.com/img/blog/mejores-restaurantes---diseno-sin-titulo.jpg"
-                alt="imagen"
+                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/3_zN-CB94UT.webp?updatedAt=1709249897741"
+                alt="Beach Celso Ramos"
               />
             </div>
-          </div>
-          <div className={styles.card}>
-            <motion.h4
-              initial={{ opacity: 0, x: "-50%", y: "40%" }}
-              whileInView={{
-                opacity: 1,
-                x: "-50%",
-                y: "-50%",
-                transition: {
-                  duration: 2,
-                  delay: 0.9,
-                  type: "spring",
-                  bounce: 0.4,
-                },
-              }}
-              viewport={{ once: false, amount: 0.2 }}
-            >
-              {active_3}
-            </motion.h4>
+          </SwiperSlide>
+          <SwiperSlide>
             <div className={styles.img_container}>
               <img
-                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/PhotoReal_A_family_walking_on_a_hill_in_summer_clothes_overloo_3_rwT-Jln97.jpg?updatedAt=1705774785446"
-                alt="imagen"
+                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/12_e9v2qADMP.webp?updatedAt=1709252407063"
+                alt="Beach Celso Ramos"
               />
             </div>
-          </div>
-        </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className={styles.img_container}>
+              <img
+                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/8_42JEkU1F6.webp?updatedAt=1709252406483"
+                alt="Beach Celso Ramos"
+              />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className={styles.img_container}>
+              <img
+                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/Praia%20Grande_ofnt_2TGmy.webp?updatedAt=1709249233331"
+                alt="Beach Celso Ramos"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.img_container}>
+              <img
+                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/DJI_20240204125245_0063_D_VtINnB_Fq.webp?updatedAt=1709248763847"
+                alt="Beach Celso Ramos"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.img_container}>
+              <img
+                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/10_Z5BIFkM1Pc.webp?updatedAt=1709252406299"
+                alt="Beach Celso Ramos"
+              />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className={styles.img_container}>
+              <img
+                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/6_zHz6Yn7QCQ.webp?updatedAt=1709252406601"
+                alt="Beach Celso Ramos"
+              />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+        <Swiper
+          spaceBetween={0}
+          slidesPerView={6}
+          loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+            /*  reverseDirection: true, */
+          }}
+          modules={[Autoplay]}
+          onSlideChange={() => console.log("slide change")}
+          onSwiper={(swiper) => console.log(swiper)}
+        >
+          <SwiperSlide>
+            <div className={styles.img_container}>
+              <img
+                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/2_7a8gUZ8L19.webp?updatedAt=1709252407078"
+                alt="Beach Celso Ramos"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.img_container}>
+              <img
+                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/5_TF1krFT3w.webp?updatedAt=1709252406237"
+                alt="Beach Celso Ramos"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.img_container}>
+              <img
+                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/11_tNQ9TjhVEw.webp?updatedAt=1709252406789"
+                alt="Beach Celso Ramos"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.img_container}>
+              <img
+                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/4_6vF4gEwot.webp?updatedAt=1709252406339"
+                alt="Beach Celso Ramos"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.img_container}>
+              <img
+                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/1_6u-pe3Bxqt.webp?updatedAt=17092524066807"
+                alt="Beach Celso Ramos"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.img_container}>
+              <img
+                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/13_sTHyLDNPA.webp?updatedAt=1709253896161"
+                alt="Beach Celso Ramos"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles.img_container}>
+              <img
+                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/11%20(1)_qyV-NmeHlZ.webp?updatedAt=1709253896309"
+                alt="Beach Celso Ramos"
+              />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <div className={styles.img_container}>
+              <img
+                src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/12%20(1)_TJxOPj94c.webp?updatedAt=1709253896441"
+                alt="Beach Celso Ramos"
+              />
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </section>
   );
