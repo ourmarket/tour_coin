@@ -31,7 +31,7 @@ export const Footer = () => {
             <h4>{t("title_2")}</h4>
             <ul>
               <li>
-                <a href="/">Email</a>
+                <a href="mailto: info@tour-coin.com">Email</a>
               </li>
 
               <li>
@@ -40,10 +40,10 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/">Telegram</a>
+                <a href="https://t.me/TourCoin_crypto">Telegram</a>
               </li>
               <li>
-                <a href="/">+541155805766</a>
+                <a>+541155805766</a>
               </li>
             </ul>
           </div>
