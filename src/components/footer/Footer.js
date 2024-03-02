@@ -35,13 +35,15 @@ export const Footer = () => {
               </li>
 
               <li>
-                <a href="/">WhatsApp</a>
+                <a href="https://wa.link/t1rj0k" target="_blank">
+                  WhatsApp
+                </a>
               </li>
               <li>
                 <a href="/">Telegram</a>
               </li>
               <li>
-                <a href="/">+54 11 256897458</a>
+                <a href="/">+541155805766</a>
               </li>
             </ul>
           </div>
@@ -66,9 +68,6 @@ export const Footer = () => {
                   BscScan
                 </a>
               </li>
-              <li>
-                <a href="/">binance 4</a>
-              </li>
             </ul>
           </div>
           <div className={styles.footerCol}>
@@ -80,13 +79,19 @@ export const Footer = () => {
               >
                 <FaFacebookF size="1.4em" />
               </a>
-              <a href="https://www.google.com" target="_blank">
+              <a
+                href="https://www.instagram.com/tourcoin_crypto"
+                target="_blank"
+              >
                 <FaInstagram size="1.4em" />
               </a>
-              <a href="https://www.google.com" target="_blank">
+              <a
+                href="https://www.tiktok.com/@tour_coin_crypto"
+                target="_blank"
+              >
                 <FaTiktok size="1.4em" />
               </a>
-              <a href="https://www.google.com" target="_blank">
+              <a href="https://twitter.com/Tourcoin_crypto" target="_blank">
                 <FaXTwitter size="1.4em" />
               </a>
             </div>
