@@ -18,7 +18,7 @@ export const Section3 = ({ translations }) => {
     text_3_3,
   } = translations;
   return (
-    <section className={styles.container} id="about">
+    <section className={styles.container} id="mission">
       <div className={styles.limit}>
         <small>{small}</small>
         <h2>{title}</h2>
@@ -104,11 +104,24 @@ export const Section3 = ({ translations }) => {
             >
               {title_3}
             </motion.h2>
-            <ul>
+            <motion.ul
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  duration: 1.5,
+                  delay: 0.3,
+                  type: "spring",
+                  bounce: 0.4,
+                },
+              }}
+              viewport={{ once: true, amount: 0.2 }}
+            >
               <li>{text_3_1}</li>
               <li>{text_3_2}</li>
               <li>{text_3_3}</li>
-            </ul>
+            </motion.ul>
           </div>
           <div className={styles.right}>
             <div className={styles.img_wrapper}>

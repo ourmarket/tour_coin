@@ -50,10 +50,13 @@
   font-family: var(--font_4);
   font-weight: 400;
   font-size: 30px;
+  font-size: clamp(1.25rem, 1.123rem + 0.633vw, 1.875rem);
 }
 .wrapper p {
   font-size: 17px;
+  font-size: clamp(0.938rem, 0.912rem + 0.127vw, 1.063rem);
   line-height: 25px;
+  line-height: clamp(1.25rem, 1.187rem + 0.316vw, 1.563rem);
 }
 
 .wrapper button {
@@ -74,9 +77,6 @@
 @media (max-width: 1280px) {
   .container {
     padding: 50px 20px;
-  }
-  .text_2 {
-    display: none;
   }
 }
 

@@ -73,7 +73,7 @@ const Menu = ({ translate, setMobile }) => {
             </Link>
           </li>
           <li>
-            <Link href="/#about" onClick={() => setMobile(false)}>
+            <Link href="/#mission" onClick={() => setMobile(false)}>
               {About}
             </Link>
           </li>

@@ -67,13 +67,13 @@
 @media (max-width: 1280px) {
   .container {
     padding: 50px 20px;
+    padding-bottom: 0;
   }
-  .left {
-    padding: 100px 50px;
-  }
-  .img_wrapper img {
-    position: relative;
-    left: -350px;
+
+  .img_wrapper {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
   }
 }
 
