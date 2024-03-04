@@ -51,25 +51,25 @@ export const Section5 = ({ translations }) => {
         <h2>{title}</h2>
         <p>{p_1}</p>
         <div className={styles.counters}>
-          <div>
+          <div className={styles.card}>
             <span className={styles.counter} id="days">
               {days}
             </span>
             <p className={styles.date}>{days_t}</p>
           </div>
-          <div>
+          <div className={styles.card}>
             <span className={styles.counter} id="hours">
               {hours}
             </span>
             <p className={styles.date}>{hours_t}</p>
           </div>
-          <div>
+          <div className={styles.card}>
             <span className={styles.counter} id="minutes">
               {minutes}
             </span>
             <p className={styles.date}>{minutes_t}</p>
           </div>
-          <div>
+          <div className={styles.card}>
             <span className={styles.counter} id="seconds">
               {seconds}
             </span>

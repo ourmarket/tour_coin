@@ -81,10 +81,17 @@
 }
 
 @media (max-width: 768px) {
-  .img {
-    display: none;
+  .limit {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
   }
   .wrapper {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .img {
     width: 100%;
   }
 }

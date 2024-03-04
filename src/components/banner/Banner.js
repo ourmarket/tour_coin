@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
+import Link from "next/link";
 import styles from "./banner.module.css";
 import { motion } from "framer-motion";
 
@@ -62,7 +63,9 @@ export const Banner = ({ title, button }) => {
               >
                 <h1 variants={menuAnimate}>Tour Coin</h1>
                 <h6 variants={menuAnimate}>{title}</h6>
-                <button variants={menuAnimate}>{button}</button>
+                <button variants={menuAnimate}>
+                  <Link href={"/#buy"}>{button}</Link>
+                </button>
               </div>
               <div className={styles.banner_video}>
                 <div className={styles.banner_video_container}>

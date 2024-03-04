@@ -43,6 +43,7 @@
 }
 .btn_lang {
   background-color: var(--color-yellow);
+
   padding: 7px;
   border-radius: 10px;
   color: var(--color-black);
@@ -138,9 +139,13 @@
   left: 0;
   right: 0;
   bottom: 0;
+  color: var(--color-yellow);
+}
+.menu_mobile svg {
+  color: var(--color-yellow);
 }
 .menu_mobile_container {
-  background-color: var(--color-black);
+  background-color: var(--color-black3);
   height: 100%;
   width: 200%;
   display: flex;
@@ -151,7 +156,7 @@
   transition: 0.5s;
 }
 .menu_mobile_container_active {
-  background-color: var(--color-black);
+  background-color: var(--color-black3);
   height: 100%;
   width: 200%;
   display: flex;
@@ -169,7 +174,7 @@
   justify-content: center;
 }
 .menu_mobile_links li {
-  font-size: 16px;
+  font-size: 25px;
   margin-bottom: 20px;
   font-family: var(--font_4);
   font-weight: bold;
@@ -184,29 +189,13 @@
   color: var(--color-white);
   z-index: 999999;
 }
-/* @media (max-width: 1280px) {
-  .navbar {
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    height: 70px;
+@media (max-width: 1120px) {
+  .links {
+    gap: 15px;
   }
-  .menu {
-    top: 90px;
-    left: 20px;
-    right: 20px;
-    height: 0;
-  }
-  .menu_active {
-    top: 90px;
-    left: 20px;
-    right: 20px;
-    height: 45px;
-    opacity: 100;
-  }
-} */
+}
 
-@media (max-width: 768px) {
+@media (max-width: 878px) {
   .navbar {
     position: fixed;
     top: 0px;
@@ -219,5 +208,8 @@
   }
   .links_mobile {
     display: block;
+  }
+  .btn_buy {
+    display: none;
   }
 }

@@ -4,11 +4,38 @@
 import styles from "./section4.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-
+import { useEffect, useState } from "react";
 import "swiper/css";
 
 export const Section4 = ({ translations }) => {
   const { small, title, p_1 } = translations;
+  const [slidesToShow, setSlidesToShow] = useState(6);
+
+  // Función para calcular el número de imágenes a mostrar basado en el ancho de la pantalla
+  const calculateSlidesToShow = () => {
+    const screenWidth = window.innerWidth;
+    let slides = 6;
+
+    // Puedes ajustar estos valores según tus necesidades
+    if (screenWidth <= 768) {
+      slides = 4;
+    }
+    if (screenWidth <= 576) {
+      slides = 2;
+    }
+
+    // Actualizar el estado con el nuevo valor de slidesToShow
+    setSlidesToShow(slides);
+  };
+
+  // Llamar a la función al cargar y al redimensionar la ventana
+  useEffect(() => {
+    calculateSlidesToShow();
+    window.addEventListener("resize", calculateSlidesToShow);
+    return () => {
+      window.removeEventListener("resize", calculateSlidesToShow);
+    };
+  }, []);
   return (
     <section className={styles.container} id="actives">
       <small>{small}</small>
@@ -17,7 +44,7 @@ export const Section4 = ({ translations }) => {
       <div>
         <Swiper
           spaceBetween={0}
-          slidesPerView={6}
+          slidesPerView={slidesToShow}
           loop={true}
           autoplay={{
             delay: 2500,
@@ -97,7 +124,7 @@ export const Section4 = ({ translations }) => {
 
         <Swiper
           spaceBetween={0}
-          slidesPerView={6}
+          slidesPerView={slidesToShow}
           loop={true}
           autoplay={{
             delay: 2500,

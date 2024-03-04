@@ -83,13 +83,12 @@ const Menu = ({ translate, setMobile }) => {
             style={{
               display: "flex",
               alignItems: "center",
-              color: "#1781a8",
+              color: "#eecd02",
               position: "relative",
-              right: "-30px",
             }}
           >
             {Language}
-            <GoChevronRight style={{ top: "10px", position: "relative" }} />
+            <GoChevronRight style={{ top: "3px", position: "relative" }} />
           </li>
         </ul>
         <ul className={styles.menu_mobile_links}>
@@ -113,12 +112,12 @@ const Menu = ({ translate, setMobile }) => {
             style={{
               display: "flex",
               alignItems: "center",
-              color: "#1781a8",
+              color: "#eecd02",
               position: "relative",
-              left: "-30px",
+              left: "-7px",
             }}
           >
-            <GoChevronLeft style={{ top: "10px", position: "relative" }} />
+            <GoChevronLeft style={{ top: "2px", position: "relative" }} />
             {back}
           </li>
         </ul>
@@ -221,7 +220,7 @@ export const Navbar = ({
             </button>
           </div>
           <div className={styles.links_mobile} onClick={() => setMobile(true)}>
-            <IoMenu size={"3rem"} />
+            <IoMenu size={"3rem"} color={"#eecd02"} />
           </div>
         </div>
       </motion.nav>

@@ -41,7 +41,7 @@
 
 @media (max-width: 768px) {
   .container {
-    padding: 70px 50px;
+    padding: 50px 20px;
   }
   .cards_container {
     flex-direction: column;
