@@ -8,7 +8,7 @@ const Card = ({ title, text, icon: Icon }) => {
   return (
     <article className={styles.card}>
       <div className={styles.icon}>
-        {Icon && <Icon size="2em" color="#eecd02" />}
+        {Icon && <Icon size="2em" color="#f9ba32" />}
       </div>
       <h3>{title}</h3>
       <p>{text}</p>

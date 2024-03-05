@@ -83,7 +83,7 @@ const Menu = ({ translate, setMobile }) => {
             style={{
               display: "flex",
               alignItems: "center",
-              color: "#eecd02",
+              color: "#f9ba32",
               position: "relative",
             }}
           >
@@ -112,7 +112,7 @@ const Menu = ({ translate, setMobile }) => {
             style={{
               display: "flex",
               alignItems: "center",
-              color: "#eecd02",
+              color: "#f9ba32",
               position: "relative",
               left: "-7px",
             }}
@@ -220,7 +220,7 @@ export const Navbar = ({
             </button>
           </div>
           <div className={styles.links_mobile} onClick={() => setMobile(true)}>
-            <IoMenu size={"3rem"} color={"#eecd02"} />
+            <IoMenu size={"3rem"} color={"#f9ba32"} />
           </div>
         </div>
       </motion.nav>
