@@ -19,7 +19,7 @@ export default function Home() {
       <Section4_index />
       <Section3_index />
       <Section5_index />
-      <Section6_index />
+      {/*  <Section6_index /> */}
       <Footer />
     </main>
   );
