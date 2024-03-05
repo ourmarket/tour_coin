@@ -7,6 +7,7 @@ import { Section3_index } from "@/components/section3";
 import { Footer } from "@/components/footer/Footer";
 import { Navbar_index } from "@/components/navbar";
 import { Section5_index } from "@/components/section5";
+import { Section6_index } from "@/components/section6";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Section4_index />
       <Section3_index />
       <Section5_index />
+      <Section6_index />
       <Footer />
     </main>
   );

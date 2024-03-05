@@ -80,6 +80,16 @@
     "minutes": "Minutos",
     "seconds": "Segundos"
   },
+  "section_6": {
+    "small": "Como comprar",
+    "title": "Tutorial de como comprar <code>Tour Coin</code>",
+    "p_1": "Bem-vindo ao <code>Tour Coin</code>, a criptomoeda que transforma suas viagens em momentos inesquecíveis! Estamos animados por você se juntar à nossa comunidade de exploradores e entusiastas do turismo. Para começar sua jornada com <code>Tour Coin</code>, recomendamos dois passos essenciais.",
+    "title_1": "Baixe a carteira recomendada MetaMask",
+    "text_1": "Baixe a carteira recomendada MetaMask para segurança e gerenciamento fácil de <code>Tour Coin</code>. Sugerimos baixar a carteira MetaMask. Esta carteira digital oferece controle total sobre seus ativos e facilita transações. Abaixo, você encontrará um vídeo sobre como instalar o MetaMask.",
+    "title_2": "Compre <code>Tour Coin</code> na PancakeSwap",
+    "text_2": "Agora que você tem sua carteira MetaMask, é hora de adquirir <code>Tour Coin</code>. Nós utilizamos a PancakeSwap, uma plataforma segura e eficiente para troca de criptomoedas. Abaixo, mostramos passo a passo como comprar <code>Tour Coin</code> na PancakeSwap."
+  },
+
   "footer": {
     "title_1": "A Empresa",
     "title_2": "Contato",
