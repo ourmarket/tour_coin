@@ -94,13 +94,17 @@
     padding: 50px 20px;
     padding-bottom: 0;
   }
-  .counters {
+  .wrapper {
     display: flex;
-    gap: 0px;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
   }
-  .counter {
-    padding: 40px 10px;
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 }
 @media (max-width: 500px) {
