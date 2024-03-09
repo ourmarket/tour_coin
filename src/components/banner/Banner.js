@@ -61,7 +61,7 @@ export const Banner = ({ title, button }) => {
                 animate={"animate"}
                 transition={{ staggerChildren: 0.2, delayChildren: 0.5 }}
               >
-                <h1 variants={menuAnimate}>Tour Coin</h1>
+                <h1 variants={menuAnimate}>TourCoin</h1>
                 <h6 variants={menuAnimate}>{title}</h6>
                 <button variants={menuAnimate}>
                   <Link href={"/#buy"}>{button}</Link>

@@ -4,9 +4,9 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Tour Coin - Your Guide to Travel and Cryptocurrency",
+  title: "TourCoin - Your Guide to Travel and Cryptocurrency",
   description:
-    "Explore the world of travel and cryptocurrency with Tour Coin. Learn about blockchain-powered travel solutions, discover new destinations, and earn rewards.",
+    "Explore the world of travel and cryptocurrency with TourCoin. Learn about blockchain-powered travel solutions, discover new destinations, and earn rewards.",
   icons: {
     icon: "/icon.png",
   },
