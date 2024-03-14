@@ -60,7 +60,7 @@ export const Footer = () => {
                   href="https://bscscan.com/address/0x04d228b15111db88729735075dcf6a9b02e6a1b1#events"
                   target="_blank"
                 >
-                  BscScan
+                  Smart contract
                 </a>
               </li>
             </ul>
