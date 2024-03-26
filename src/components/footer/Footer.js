@@ -57,7 +57,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://bscscan.com/address/0x04d228b15111db88729735075dcf6a9b02e6a1b1#events"
+                  href="https://bscscan.com/address/0x34b08ccf9620aed6d158bae65e85bb3bbe2c384a"
                   target="_blank"
                 >
                   SmartContract
