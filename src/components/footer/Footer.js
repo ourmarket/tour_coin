@@ -65,12 +65,12 @@ export const Footer = () => {
               </li>
               <li>
                 <a href={t("link_8")} target="_blank">
-                  Cambiar 1
+                  Tokenomics
                 </a>
               </li>
               <li>
                 <a href={t("link_9")} target="_blank">
-                  Cambiar 2
+                  Whitepaper
                 </a>
               </li>
             </ul>
