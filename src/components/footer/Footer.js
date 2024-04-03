@@ -45,7 +45,7 @@ export const Footer = () => {
           <div className={styles.footerCol}>
             <h4>{t("title_3")}</h4>
             <ul>
-              {/* <li>
+              <li>
                 <a href="https://pancakeswap.finance/" target="_blank">
                   PancakeSwap
                 </a>
@@ -54,7 +54,7 @@ export const Footer = () => {
                 <a href="https://metamask.io/" target="_blank">
                   MetaMask
                 </a>
-              </li> */}
+              </li>
               <li>
                 <a
                   href="https://bscscan.com/address/0x34b08ccf9620aed6d158bae65e85bb3bbe2c384a"
