@@ -16,7 +16,7 @@ export const Section6 = ({ translations }) => {
           <div className={styles.left}>
             <h3>{title_1}</h3>
             <p>{text_1}</p>
-            <Link href={"https://www.youtube.com"}>
+            <Link href={"https://youtu.be/MB0ywuS3CmA?si=YkK4LYpNV9sAG56j"}>
               <div className={styles.image}>
                 <img src="/metamask.png" alt="metamask" />
               </div>
