@@ -84,10 +84,15 @@
     "small": "How to buy",
     "title": "Tutorial on how to buy <code>TourCoin</code>",
     "p_1": "Welcome to <code>TourCoin</code>, turns your travels into unforgettable moments! We are excited to have you join our community of explorers and tourism enthusiasts. To start your journey with <code>TourCoin</code>, we recommend two essential steps.",
-    "title_1": "Download the recommended wallet MetaMask",
+    "title_1": "Download the wallet MetaMask",
     "text_1": "Download the recommended wallet MetaMask for security and easy management of <code>TourCoin</code>. We suggest downloading the MetaMask wallet. This digital wallet gives you full control over your assets and facilitates transactions. Below, you will find a video on how to install MetaMask.",
     "title_2": "Buy <code>TourCoin</code> on PancakeSwap",
     "text_2": "Now that you have your MetaMask wallet, it's time to acquire <code>TourCoin</code>. We use PancakeSwap, a secure and efficient platform for exchanging cryptocurrencies. Below, we show you step by step how to buy <code>TourCoin</code> on PancakeSwap."
+  },
+  "section_7": {
+    "small": "Information",
+    "title": "Information about <code>TourCoin</code>",
+    "p_1": "Here you can see all the token information, transactions, and quotations."
   },
 
   "footer": {

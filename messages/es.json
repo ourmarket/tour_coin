@@ -92,6 +92,11 @@
     "title_2": "Compra <code>TourCoin</code> en PancakeSwap",
     "text_2": "Ahora que tienes tu wallet MetaMask, es hora de adquirir <code>TourCoin</code>. Utilizamos PancakeSwap, una plataforma segura y eficiente para intercambiar criptomonedas. A continuación, te mostramos cómo comprar <code>TourCoin</code> paso a paso en PancakeSwap."
   },
+  "section_7": {
+    "small": "Información",
+    "title": "Información sobre <code>TourCoin</code>",
+    "p_1": "Aquí puedes ver toda la información del token, transacciones y cotización."
+  },
   "footer": {
     "title_1": "La empresa",
     "title_2": "Contacto",
