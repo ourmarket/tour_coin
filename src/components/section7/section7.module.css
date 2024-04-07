@@ -83,7 +83,6 @@
   width: 100%;
 }
 .info {
-  background-color: aqua;
   position: relative;
   width: 100%;
   padding-bottom: 80%;
@@ -127,5 +126,10 @@
   }
   .counter {
     padding: 20px 10px;
+  }
+  .info {
+    position: relative;
+    width: 100%;
+    padding-bottom: 280%;
   }
 }
