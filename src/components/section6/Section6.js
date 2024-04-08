@@ -28,7 +28,7 @@ export const Section6 = ({ translations }) => {
           <div className={styles.right}>
             <h3>{title_2}</h3>
             <p>{text_2}</p>
-            <Link href={"https://www.youtube.com"}>
+            <Link href={"https://youtu.be/ZDQotVZmih8?si=aRDjTKD_mZN5azEA"}>
               <div className={styles.image}>
                 <img src="/pancakeswap.png" alt="pancakeswap" />
               </div>
