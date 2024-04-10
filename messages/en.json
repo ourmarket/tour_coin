@@ -3,6 +3,11 @@
     "title": "Where every <code>TourCoin</code> tells an adventure story. Join us at the forefront of the travel revolution and discover a world of possibilities, your journey, your currency, your <code>TourCoin</code>.",
     "button": "Buy"
   },
+  "banner_tutorials": {
+    "title": "In this section, we explain step by step how to buy <code>TourCoin</code>.",
+    "button": "Buy",
+    "buy": "How to buy"
+  },
   "navbar": {
     "Home": "Home",
     "TourCoin": "TourCoin",
@@ -24,6 +29,26 @@
     "text_2_2": "By using <code>TourCoin</code>, travelers can enjoy an innovative approach to making payments and transactions in the tourism industry, providing a smoother and more rewarding experience. Travel, smile, and pay with <code>TourCoin</code>. Happiness is found in every <code>TourCoin</code> you own.",
     "button": "Buy"
   },
+  "section_1_tutorials": {
+    "small": "We invite you to be part of the TourCoin ecosystem",
+    "h2": "Tutorial on how to buy <code>TourCoin</code>",
+    "h2_1": "Download the <code>MetaMask</code> wallet",
+    "p_1": "Welcome to <code>TourCoin</code>, where you can turn your travels into unforgettable moments! We are excited that you are joining our community of explorers and tourism enthusiasts. To start your journey with <code>TourCoin</code>, we recommend the following essential steps.",
+    "title_1": "Step 1",
+    "title_2": "Step 2",
+    "title_3": "Step 3",
+    "title_4": "Step 4",
+    "text_1": "Tutorial on how to create an account on Binance and download the app.",
+    "text_2": "Fund fiat currency on Binance and buy Bnb.",
+    "text_3": "Download the MetaMask wallet and load your TourCoin token.",
+    "text_4": "How to buy TourCoin (TRC) with Bnb.",
+    "button": "See tutorial",
+    "video_1": "https://www.youtube.com/embed/JfXlbgXhmis",
+    "video_2": "https://www.youtube.com/embed/1qUpHidyEw4",
+    "video_3": "https://www.youtube.com/embed/MB0ywuS3CmA",
+    "video_4": "https://www.youtube.com/embed/ZDQotVZmih8"
+  },
+
   "section_2": {
     "small": "Benefits",
     "h2": "Benefits of using <code>TourCoin</code>",
@@ -108,6 +133,7 @@
     "link_6": "WhatsApp",
     "link_7": "Telegram",
     "link_8": "https://www.calameo.com/read/0076202107a7d34aa76e5",
-    "link_9": "https://www.calameo.com/read/007620210292c18b5efb0"
+    "link_9": "https://www.calameo.com/read/007620210292c18b5efb0",
+    "link_10": "How to buy"
   }
 }

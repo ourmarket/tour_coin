@@ -4,7 +4,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import Link from "next/link";
+import { Link } from "../../navigation";
 export const Footer = () => {
   const t = useTranslations("footer");
   return (
@@ -23,6 +23,9 @@ export const Footer = () => {
               <li>
                 <Link href="/#mission">{t("link_3")}</Link>
               </li>
+              <li>
+                <Link href="/tutorials">{t("link_10")}</Link>
+              </li>
             </ul>
           </div>
           <div className={styles.footerCol}>
@@ -39,6 +42,9 @@ export const Footer = () => {
               </li>
               <li>
                 <a href="https://t.me/TourCoin_crypto">Telegram</a>
+              </li>
+              <li>
+                <a href="https://linktr.ee/tourcoin">Linktree</a>
               </li>
             </ul>
           </div>

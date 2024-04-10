@@ -3,6 +3,11 @@
     "title": "Donde cada <code>TourCoin</code> cuenta una historia de aventuras. Únete a nosotros en la vanguardia de la revolución de los viajes y descubre un mundo de posibilidades, tu viaje, tu moneda, tu <code>TourCoin</code>.",
     "button": "Comprar"
   },
+  "banner_tutorials": {
+    "title": "En esta sección te explicamos paso a paso como comprar <code>TourCoin</code>.",
+    "button": "Comprar",
+    "buy": "Como comprar"
+  },
   "navbar": {
     "Home": "Inicio",
     "TourCoin": "TourCoin",
@@ -23,6 +28,25 @@
     "text_2_1": "Los usuarios pueden adquirir <code>TourCoin</code> a través de intercambios de criptomonedas o directamente desde la plataforma de PancakeSwap. Una vez adquiridos, los <code>TourCoin</code> se almacenan en una billetera digital como la de MetaMask.",
     "text_2_2": "Al utilizar <code>TourCoin</code>, los viajeros pueden disfrutar de un enfoque innovador para realizar pagos y transacciones en la industria turística, brindando una experiencia más fluida y gratificante. Viaja, sonríe y paga con <code>TourCoin</code>. La felicidad se encuentra en cada <code>TourCoin</code> que posees.",
     "button": "Comprar"
+  },
+  "section_1_tutorials": {
+    "small": "Te invitamos a ser parte de ecosistema de TourCoin",
+    "h2": "Tutorial de como comprar <code>TourCoin</code>",
+    "h2_1": "Descargar la wallet de <code>MetaMask</code>",
+    "p_1": "¡Bienvenido a <code>TourCoin</code>, transforma tus viajes en momentos inolvidables! Estamos emocionados de que te unas a nuestra comunidad de exploradores y apasionados del turismo. Para comenzar tu viaje con <code>TourCoin</code>, te recomendamos pasos esenciales.",
+    "title_1": "Paso 1",
+    "title_2": "Paso 2",
+    "title_3": "Paso 3",
+    "title_4": "Paso 4",
+    "text_1": "Tutorial como crear cuenta en Binance y descargar app.",
+    "text_2": "Fondear moneda fiat a Binance y comprar Bnb.",
+    "text_3": "Descargar Wallet de MetaMask y cargar tu token TourCoin.",
+    "text_4": "Como comprar TourCoin(TRC) con Bnb.",
+    "button": "Ver tutorial",
+    "video_1": "https://www.youtube.com/embed/JfXlbgXhmis",
+    "video_2": "https://www.youtube.com/embed/1qUpHidyEw4",
+    "video_3": "https://www.youtube.com/embed/MB0ywuS3CmA",
+    "video_4": "https://www.youtube.com/embed/ZDQotVZmih8"
   },
 
   "section_2": {
@@ -110,6 +134,7 @@
     "link_6": "WhatsApp",
     "link_7": "Telegram",
     "link_8": "https://www.calameo.com/read/00762021090bb7158e7ca",
-    "link_9": "https://www.calameo.com/read/0076202107c4679c06914"
+    "link_9": "https://www.calameo.com/read/0076202107c4679c06914",
+    "link_10": "Como comprar"
   }
 }

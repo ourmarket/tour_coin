@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { Link } from "../../navigation";
+import Link from "next/link";
 import styles from "./banner.module.css";
 import { motion } from "framer-motion";
 
@@ -21,7 +21,7 @@ const fadeIn = {
   },
 };
 
-export const Banner = ({ title, button }) => {
+export const Banner = ({ title, button, buy }) => {
   return (
     <section
       className={styles.banner_section}
@@ -61,11 +61,8 @@ export const Banner = ({ title, button }) => {
                 animate={"animate"}
                 transition={{ staggerChildren: 0.2, delayChildren: 0.5 }}
               >
-                <h1 variants={menuAnimate}>TourCoin</h1>
+                <h1 variants={menuAnimate}>{buy}</h1>
                 <h6 variants={menuAnimate}>{title}</h6>
-                <button variants={menuAnimate}>
-                  <Link href={"/tutorials"}>{button}</Link>
-                </button>
               </div>
               <div className={styles.banner_video}>
                 <div className={styles.banner_video_container}>

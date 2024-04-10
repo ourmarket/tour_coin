@@ -1,12 +1,14 @@
 "use client";
 import Image from "next/image";
 import styles from "./navbar.module.css";
-import Link from "next/link";
+import { Link } from "../../navigation";
 import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { IoMdClose } from "react-icons/io";
 import { AnimatePresence, motion } from "framer-motion";
+import LanguageChanger from "../languageChanger/LanguageChanger";
+import { useRouter, usePathname } from "../../navigation";
 
 const overlayVariants = {
   hidden: { opacity: 0 },
@@ -33,8 +35,16 @@ const Menu = ({ translate, setMobile }) => {
     English,
     Portuguese,
     back,
+    buy,
   } = translate;
   const [menu, setMenu] = useState(false);
+
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const handleChange = (language) => {
+    router.push(pathname, { locale: language });
+  };
   return (
     <motion.div
       className={styles.menu_mobile}
@@ -72,9 +82,15 @@ const Menu = ({ translate, setMobile }) => {
               {Actives}
             </Link>
           </li>
+
           <li>
             <Link href="/#mission" onClick={() => setMobile(false)}>
               {About}
+            </Link>
+          </li>
+          <li>
+            <Link href="/tutorials" onClick={() => setMobile(false)}>
+              {buy}
             </Link>
           </li>
 
@@ -92,20 +108,29 @@ const Menu = ({ translate, setMobile }) => {
           </li>
         </ul>
         <ul className={styles.menu_mobile_links}>
-          <li>
-            <Link href={"es"} onClick={() => setMobile(false)}>
-              {Spanish}
-            </Link>
+          <li
+            onClick={() => {
+              setMobile(false);
+              handleChange("es");
+            }}
+          >
+            {Spanish}
           </li>
-          <li>
-            <Link href={"en"} onClick={() => setMobile(false)}>
-              {English}
-            </Link>
+          <li
+            onClick={() => {
+              setMobile(false);
+              handleChange("en");
+            }}
+          >
+            {English}
           </li>
-          <li>
-            <Link href={"pt"} onClick={() => setMobile(false)}>
-              {Portuguese}
-            </Link>
+          <li
+            onClick={() => {
+              setMobile(false);
+              handleChange("pt");
+            }}
+          >
+            {Portuguese}
           </li>
           <li
             onClick={() => setMenu(false)}
@@ -138,7 +163,6 @@ export const Navbar = ({
   back,
   buy,
 }) => {
-  const [menu, setMenu] = useState(false);
   const [mobile, setMobile] = useState(false);
 
   const translate = {
@@ -199,24 +223,19 @@ export const Navbar = ({
                 </Link>
               </li>
               <li>
-                <Link href="/#about" onClick={() => setMobile(false)}>
+                <Link href="/#mission" onClick={() => setMobile(false)}>
                   {About}
                 </Link>
               </li>
 
-              <li
-                style={{ display: "flex", alignItems: "center" }}
-                onClick={() => setMenu(!menu)}
-                className={styles.btn_lang}
-              >
-                {Language}
-                <GoChevronRight />
+              <li>
+                <LanguageChanger language={Language} />
               </li>
             </ul>
           </div>
           <div>
             <button className={styles.btn_buy}>
-              <Link href="/#buy">{buy}</Link>
+              <Link href="/tutorials">{buy}</Link>
             </button>
           </div>
           <div className={styles.links_mobile} onClick={() => setMobile(true)}>
@@ -224,30 +243,6 @@ export const Navbar = ({
           </div>
         </div>
       </motion.nav>
-      <div className={menu ? styles.menu_active : styles.menu}>
-        <ul>
-          <li>
-            <Link
-              href={"es"}
-              onClick={() => {
-                setMenu(!menu);
-              }}
-            >
-              {Spanish}
-            </Link>
-          </li>
-          <li>
-            <Link href={"en"} onClick={() => setMenu(!menu)}>
-              {English}
-            </Link>
-          </li>
-          <li>
-            <Link href={"pt"} onClick={() => setMenu(!menu)}>
-              {Portuguese}
-            </Link>
-          </li>
-        </ul>
-      </div>
     </header>
   );
 };
