@@ -8,11 +8,17 @@
     "button": "Comprar",
     "buy": "Como comprar"
   },
+  "banner_community": {
+    "title": "Convidamos você a fazer parte da comunidade <code>TourCoin</code>, onde você pode viver momentos inesquecíveis.",
+    "button": "Comprar",
+    "buy": "Comunidade"
+  },
   "navbar": {
     "Home": "Início",
     "TourCoin": "TourCoin",
     "About": "Missão",
     "Actives": "Experiências",
+    "Community": "Comunidade",
     "Language": "Idioma",
     "Spanish": "Espanhol",
     "English": "Inglês",
@@ -47,6 +53,11 @@
     "video_2": "https://www.youtube.com/embed/1qUpHidyEw4",
     "video_3": "https://www.youtube.com/embed/MB0ywuS3CmA",
     "video_4": "https://www.youtube.com/embed/HSV0At2kftY"
+  },
+  "section_1_community": {
+    "small": "Eventos",
+    "title": "Evento de lançamento da <code>TourCoin</code>",
+    "p_1": "Estas são algumas imagens do evento de lançamento da <code>TourCoin</code> na chácara San Andres, no restaurante La Tabla."
   },
 
   "section_2": {

@@ -36,6 +36,7 @@ const Menu = ({ translate, setMobile }) => {
     Portuguese,
     back,
     buy,
+    Community,
   } = translate;
   const [menu, setMenu] = useState(false);
 
@@ -86,6 +87,11 @@ const Menu = ({ translate, setMobile }) => {
           <li>
             <Link href="/#mission" onClick={() => setMobile(false)}>
               {About}
+            </Link>
+          </li>
+          <li>
+            <Link href="/community" onClick={() => setMobile(false)}>
+              {Community}
             </Link>
           </li>
           <li>
@@ -162,6 +168,7 @@ export const Navbar = ({
   Portuguese,
   back,
   buy,
+  Community,
 }) => {
   const [mobile, setMobile] = useState(false);
 
@@ -176,6 +183,7 @@ export const Navbar = ({
     Portuguese,
     back,
     buy,
+    Community,
   };
   return (
     <header>
@@ -222,9 +230,10 @@ export const Navbar = ({
                   {Actives}
                 </Link>
               </li>
+
               <li>
-                <Link href="/#mission" onClick={() => setMobile(false)}>
-                  {About}
+                <Link href="/community" onClick={() => setMobile(false)}>
+                  {Community}
                 </Link>
               </li>
 

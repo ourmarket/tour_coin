@@ -16,6 +16,7 @@ export const Navbar_index = () => {
       Portuguese={t("Portuguese")}
       back={t("back")}
       buy={t("buy")}
+      Community={t("Community")}
     />
   );
 };

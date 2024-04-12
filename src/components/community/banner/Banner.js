@@ -76,7 +76,7 @@ export const Banner = ({ title, button, buy }) => {
                     >
                       <source
                         type="video/mp4"
-                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/WhatsApp%20Video%202024-02-29%20at%2016.28.42_44tSAUIKp.mp4?updatedAt=1709240267366"
+                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/subir%202_676BcfJQC.mp4?updatedAt=1712930690543"
                       />
                     </video>
                   </div>
@@ -90,7 +90,7 @@ export const Banner = ({ title, button, buy }) => {
                     >
                       <source
                         type="video/mp4"
-                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/WhatsApp%20Video%202024-02-29%20at%2017.43.40_NAiCGoPzP.mp4?updatedAt=1709240237086"
+                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/V%C3%ADdeo%20sin%20t%C3%ADtulo%20_%20Hecho%20con%20Clipchamp%20(online-video-cutter.com)%20(1)%20(1)_hKoQxSwo_m.mp4?updatedAt=1712935926598"
                       />
                     </video>
                   </div>
@@ -104,7 +104,7 @@ export const Banner = ({ title, button, buy }) => {
                     >
                       <source
                         type="video/mp4"
-                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/WhatsApp%20Video%202024-02-29%20at%2018.22.41_5MZuVsXDX.mp4?updatedAt=1709242961619"
+                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/subir%201_Q04Ergrlz.mp4?updatedAt=1712930690206"
                       />
                     </video>
                   </div>

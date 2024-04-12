@@ -2,7 +2,7 @@ import { Banner } from "./Banner";
 import { useTranslations } from "next-intl";
 
 export const Banner_index = () => {
-  const t = useTranslations("banner_tutorials");
+  const t = useTranslations("banner_community");
   const title = t.rich("title", {
     code: (chunks) => <code className="strong">{chunks}</code>,
   });
