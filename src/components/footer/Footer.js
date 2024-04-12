@@ -41,10 +41,14 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://t.me/TourCoin_crypto">Telegram</a>
+                <a href="https://t.me/TourCoin_crypto" target="_blank">
+                  Telegram
+                </a>
               </li>
               <li>
-                <a href="https://linktr.ee/tourcoin">Linktree</a>
+                <a href="https://linktr.ee/tourcoin" target="_blank">
+                  Linktree
+                </a>
               </li>
             </ul>
           </div>
@@ -96,10 +100,7 @@ export const Footer = () => {
               >
                 <FaInstagram size="1.4em" />
               </a>
-              <a
-                href="https://www.tiktok.com/@tour_coin_crypto"
-                target="_blank"
-              >
+              <a href="https://www.tiktok.com/@tourcoin_crypto" target="_blank">
                 <FaTiktok size="1.4em" />
               </a>
               <a href="https://twitter.com/Tourcoin_crypto" target="_blank">
