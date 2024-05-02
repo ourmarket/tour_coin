@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import { Whatsapp } from "@/components/whatsapp";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +33,12 @@ export default function RootLayout({ children, params: { locale } }) {
         </Script>
       </head>
 
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div>
+          <Whatsapp />
+        </div>
+        {children}
+      </body>
     </html>
   );
 }

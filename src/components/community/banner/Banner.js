@@ -76,7 +76,7 @@ export const Banner = ({ title, button, buy }) => {
                     >
                       <source
                         type="video/mp4"
-                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/subir%202_676BcfJQC.mp4?updatedAt=1712930690543"
+                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/subir%201_Q04Ergrlz.mp4?updatedAt=1712930690206"
                       />
                     </video>
                   </div>
@@ -104,7 +104,7 @@ export const Banner = ({ title, button, buy }) => {
                     >
                       <source
                         type="video/mp4"
-                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/subir%201_Q04Ergrlz.mp4?updatedAt=1712930690206"
+                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/tc_final_7e6hWkGWni.mp4?updatedAt=1714572036023"
                       />
                     </video>
                   </div>

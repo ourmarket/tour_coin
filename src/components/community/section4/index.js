@@ -11,11 +11,13 @@ export const Section4_index = () => {
   const p_1 = t.rich("p_1", {
     code: (chunks) => <code className="strong">{chunks}</code>,
   });
+  const p_2 = t.raw("p_2");
 
   const translations = {
     small,
     title,
     p_1,
+    p_2,
   };
 
   return <Section4 translations={translations} />;

@@ -43,10 +43,22 @@ ul {
   list-style: none;
 }
 a {
-  color: var(--color-white);
+  font-weight: bold;
+  color: var(--color-yellow);
+  font-family: var(--font_4);
   text-decoration: none;
 }
 .strong {
+  font-weight: bold;
+  color: var(--color-yellow);
+  font-family: var(--font_4);
+}
+strong .link {
+  font-weight: bold;
+  color: var(--color-yellow);
+  font-family: var(--font_4);
+}
+strong {
   font-weight: bold;
   color: var(--color-yellow);
   font-family: var(--font_4);

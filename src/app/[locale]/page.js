@@ -14,6 +14,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Navbar_index />
+
       <Banner_index />
       <Section1_index />
       <Section2_index />
