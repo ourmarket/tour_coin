@@ -106,6 +106,10 @@
 .slider {
   display: none;
 }
+.slider img {
+  display: block;
+  width: 100%;
+}
 @media (max-width: 768px) {
   .container {
     min-height: 100vb;
@@ -119,5 +123,10 @@
   }
   .slider {
     display: block;
+    width: 100%;
+  }
+  .slider img {
+    display: block;
+    width: 100%;
   }
 }
