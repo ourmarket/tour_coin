@@ -19,6 +19,9 @@
   --font_3: "Roboto", sans-serif;
   --font_4: "Rubik", sans-serif;
   --font_5: "Orbitron", sans-serif;
+
+  --swiper-navigation-color: #bcbcbc;
+  --swiper-pagination-color: #bcbcbc;
 }
 
 * {

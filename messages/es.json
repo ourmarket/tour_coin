@@ -13,11 +13,15 @@
     "button": "Comprar",
     "buy": "Comunidad"
   },
+  "banner_services": {
+    "title": "Servicios",
+    "sub_title": "Estos son parte de los servicios de la comunidad <code>TourCoin</code>, donde podrás vivir momentos inolvidables."
+  },
   "navbar": {
     "Home": "Inicio",
     "TourCoin": "TourCoin",
     "About": "Misión",
-    "Actives": "Experiencias",
+    "Actives": "Servicios",
     "Community": "Comunidad",
     "Language": "Lenguaje",
     "Spanish": "Español",
@@ -53,6 +57,15 @@
     "video_2": "https://www.youtube.com/embed/1qUpHidyEw4",
     "video_3": "https://www.youtube.com/embed/MB0ywuS3CmA",
     "video_4": "https://www.youtube.com/embed/HSV0At2kftY"
+  },
+  "section_1_services": {
+    "small": "Servicios",
+    "h2": "Departamentos",
+    "p_1": "Estos son nuestros departamentos en Celso Ramos, Brasil."
+  },
+  "section_1_services_rooms": {
+    "consult": "Consultar precios y disponibilidad",
+    "airbnb": "Ver en Airbnb"
   },
 
   "section_1_community": {

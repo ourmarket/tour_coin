@@ -10,20 +10,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import LanguageChanger from "../languageChanger/LanguageChanger";
 import { useRouter, usePathname } from "../../navigation";
 
-const overlayVariants = {
-  hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.5, delay: 0.5 } },
-  exit: { opacity: 0, transition: { duration: 0 } },
-};
-const menuAnimate = {
-  initial: { opacity: 0, x: -150 },
-  animate: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.5 },
-  },
-};
-
 const Menu = ({ translate, setMobile }) => {
   const {
     Home,
@@ -79,7 +65,7 @@ const Menu = ({ translate, setMobile }) => {
             </Link>
           </li>
           <li>
-            <Link href="/#actives" onClick={() => setMobile(false)}>
+            <Link href="/services" onClick={() => setMobile(false)}>
               {Actives}
             </Link>
           </li>
@@ -226,7 +212,7 @@ export const Navbar = ({
                 </Link>
               </li>
               <li>
-                <Link href="/#actives" onClick={() => setMobile(false)}>
+                <Link href="/services" onClick={() => setMobile(false)}>
                   {Actives}
                 </Link>
               </li>

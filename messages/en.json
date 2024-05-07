@@ -13,12 +13,16 @@
     "button": "Buy",
     "buy": "Community"
   },
+  "banner_services": {
+    "title": "Services",
+    "sub_title": "These are part of the services of the <code>TourCoin</code> community, where you can experience unforgettable moments."
+  },
 
   "navbar": {
     "Home": "Home",
     "TourCoin": "TourCoin",
     "About": "Mission",
-    "Actives": "Experiences",
+    "Actives": "Services",
     "Community": "Community",
     "Language": "Language",
     "Spanish": "Spanish",
@@ -62,6 +66,15 @@
     "p_1": "Here are some images from the TourCoin launch event at Chacra San Andres, in the La Taba restaurant.",
     "title_2": "ProCar 4000 Event",
     "p_2": "<p>The adrenaline of Argentina's <strong>ProCar 4000</strong> mixed with the innovation of <strong>TourCoin</strong>, present alongside <a href='https://www.tiktok.com/@ina_gallo' target='_blank'>@ina_gallo</a>, <strong>Gastón Costa</strong>, and <strong>Claudio Costa</strong>. <br /> An epic event, a devoted audience. Thank you for opening the doors to this unforgettable experience! </p>"
+  },
+  "section_1_services": {
+    "small": "Services",
+    "h2": "Departments",
+    "p_1": "These are our departments in Celso Ramos, Brazil."
+  },
+  "section_1_services_rooms": {
+    "consult": "Check prices and availability",
+    "airbnb": "View on Airbnb"
   },
 
   "section_2": {

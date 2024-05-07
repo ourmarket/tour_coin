@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: "ik.imagekit.io",
         pathname: "**",
       },
+      {
+        protocol: "https",
+        hostname: "a0.muscache.com",
+        pathname: "**",
+      },
     ],
   },
 };
