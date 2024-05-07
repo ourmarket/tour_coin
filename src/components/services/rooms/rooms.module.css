@@ -114,6 +114,7 @@
   .container {
     min-height: 100vb;
     margin-top: 100px;
+    margin-bottom: 60px;
   }
   .info {
     flex-direction: column;
