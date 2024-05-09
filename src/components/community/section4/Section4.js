@@ -7,8 +7,27 @@ import { Autoplay } from "swiper/modules";
 import { useEffect, useState } from "react";
 import "swiper/css";
 
+const oneMonthPhotos_1 = [
+  "https://ik.imagekit.io/mrprwema7/Tour%20Coin/One_month/photo%20(3)_xdw2Z_-8M.webp?updatedAt=1715261894516",
+  "https://ik.imagekit.io/mrprwema7/Tour%20Coin/One_month/photo%20(11)_ga1heux0i.webp?updatedAt=1715261894765",
+  "https://ik.imagekit.io/mrprwema7/Tour%20Coin/One_month/photo%20(5)_lDx0wcB33.webp?updatedAt=1715261894710",
+  "https://ik.imagekit.io/mrprwema7/Tour%20Coin/One_month/photo%20(10)_VieXnv0D0.webp?updatedAt=1715261893673",
+  "https://ik.imagekit.io/mrprwema7/Tour%20Coin/One_month/photo%20(1)_oE9ozrcFb.webp?updatedAt=1715261893687",
+  "https://ik.imagekit.io/mrprwema7/Tour%20Coin/One_month/photo%20(6)_7PJkbqhsk.webp?updatedAt=1715261894934",
+  "https://ik.imagekit.io/mrprwema7/Tour%20Coin/One_month/photo%20(14)_wnPbibvxf.webp?updatedAt=1715261895716",
+];
+const oneMonthPhotos_2 = [
+  "https://ik.imagekit.io/mrprwema7/Tour%20Coin/One_month/photo%20(12)_8F6BtBIZ0.webp?updatedAt=1715261895946",
+  "https://ik.imagekit.io/mrprwema7/Tour%20Coin/One_month/photo%20(7)_SiBCPTrg0.webp?updatedAt=1715261893836",
+  "https://ik.imagekit.io/mrprwema7/Tour%20Coin/One_month/photo%20(8)_-PBcK9Cm8.webp?updatedAt=1715261895067",
+  "https://ik.imagekit.io/mrprwema7/Tour%20Coin/One_month/photo%20(2)_awvWmkODM.webp?updatedAt=1715261894291",
+  "https://ik.imagekit.io/mrprwema7/Tour%20Coin/One_month/photo%20(13)_7o2JcH2Io.webp?updatedAt=1715261894818",
+  "https://ik.imagekit.io/mrprwema7/Tour%20Coin/One_month/photo%20(9)_11jgFNo4F.webp?updatedAt=1715261893624",
+  "https://ik.imagekit.io/mrprwema7/Tour%20Coin/One_month/photo%20(4)_yU5vJ2oQ0.webp?updatedAt=1715261893812",
+];
+
 export const Section4 = ({ translations }) => {
-  const { small, title, p_1, p_2 } = translations;
+  const { small, title, title_3, p_1, p_2, p_3 } = translations;
   const [slidesToShow, setSlidesToShow] = useState(6);
 
   // Función para calcular el número de imágenes a mostrar basado en el ancho de la pantalla
@@ -286,6 +305,56 @@ export const Section4 = ({ translations }) => {
                 />
               </div>
             </SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
+      <section className={styles.container} id="actives">
+        <small>{small}</small>
+        <h2>{title_3}</h2>
+        <div dangerouslySetInnerHTML={{ __html: p_3 }} />
+        <div>
+          <Swiper
+            spaceBetween={0}
+            slidesPerView={slidesToShow}
+            loop={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+              reverseDirection: true,
+            }}
+            modules={[Autoplay]}
+          >
+            {oneMonthPhotos_1.map((img) => {
+              return (
+                <SwiperSlide key={img}>
+                  <div className={styles.img_container}>
+                    <img src={img} alt="TourCoin event" />
+                  </div>
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+
+          <Swiper
+            spaceBetween={0}
+            slidesPerView={slidesToShow}
+            loop={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+              /*  reverseDirection: true, */
+            }}
+            modules={[Autoplay]}
+          >
+            {oneMonthPhotos_2.map((img) => {
+              return (
+                <SwiperSlide key={img}>
+                  <div className={styles.img_container}>
+                    <img src={img} alt="TourCoin event" />
+                  </div>
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
       </section>
