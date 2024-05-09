@@ -41,7 +41,7 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://t.me/TourCoin_crypto" target="_blank">
+                <a href="https://t.me/+UlC1DX0txuhjOGIx" target="_blank">
                   Telegram
                 </a>
               </li>
