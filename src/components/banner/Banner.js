@@ -21,7 +21,7 @@ const fadeIn = {
   },
 };
 
-export const Banner = ({ title, button }) => {
+export const Banner = ({ title, button, whitepaper }) => {
   return (
     <section
       className={styles.banner_section}
@@ -63,9 +63,20 @@ export const Banner = ({ title, button }) => {
               >
                 <h1 variants={menuAnimate}>TourCoin</h1>
                 <h6 variants={menuAnimate}>{title}</h6>
-                <button variants={menuAnimate}>
-                  <Link href={"/tutorials"}>{button}</Link>
-                </button>
+                <div className={styles.btn_container}>
+                  <Link href={"/tutorials"}>
+                    <button variants={menuAnimate}>{button}</button>
+                  </Link>
+
+                  <a href={whitepaper} target="_blank">
+                    <button
+                      variants={menuAnimate}
+                      style={{ backgroundColor: "#f1f1f1" }}
+                    >
+                      Whitepaper
+                    </button>
+                  </a>
+                </div>
               </div>
               <div className={styles.banner_video}>
                 <div className={styles.banner_video_container}>

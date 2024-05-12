@@ -1,7 +1,8 @@
 {
   "banner": {
     "title": "Onde cada <code>TourCoin</code> conta uma história de aventura. Junte-se a nós na vanguarda da revolução das viagens e descubra um mundo de possibilidades, sua jornada, sua moeda, sua <code>TourCoin</code>.",
-    "button": "Comprar"
+    "button": "Comprar",
+    "whitepaper": "https://www.calameo.com/read/0076202105b73c7e89f95"
   },
   "banner_tutorials": {
     "title": "Nesta seção, explicamos passo a passo como comprar <code>TourCoin</code>.",

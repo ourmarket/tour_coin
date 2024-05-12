@@ -35,9 +35,26 @@
   color: var(--color-white);
   margin-bottom: 60px;
 }
-.wrapper {
-  display: flex;
-  gap: 140px;
+
+.btn_active {
+  width: 50%;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #6c6c6c;
+}
+.btn_inactive {
+  width: 50%;
+  background-color: #1b1a21;
+  color: var(--color-white);
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #302f36;
 }
 .left h3,
 .right h3 {
@@ -107,11 +124,7 @@
     padding: 50px 20px;
     padding-bottom: 0;
   }
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
+
   .left,
   .right {
     display: flex;

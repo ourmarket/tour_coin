@@ -7,5 +7,7 @@ export const Banner_index = () => {
     code: (chunks) => <code className="strong">{chunks}</code>,
   });
 
-  return <Banner title={title} button={t("button")} />;
+  return (
+    <Banner title={title} button={t("button")} whitepaper={t("whitepaper")} />
+  );
 };

@@ -77,6 +77,12 @@
   letter-spacing: 2px;
   line-height: 25px;
   font-family: var(--font4);
+  margin-bottom: 35px;
+}
+.btn_container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .banner_title button {
   background-color: var(--color-yellow);
@@ -84,7 +90,7 @@
   width: 200px;
   height: 50px;
   font-size: 20px;
-  margin-top: 35px;
+
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -205,6 +211,9 @@
   .banner_video {
     display: none;
   }
+  .btn_container {
+    justify-content: center;
+  }
 }
 @media (max-width: 500px) {
   .banner_section {
@@ -220,6 +229,9 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  .btn_container {
+    justify-content: center;
   }
 }
 
