@@ -150,6 +150,32 @@
     "title": "Information about <code>TourCoin</code>",
     "p_1": "Here you can see all the token information, transactions, and quotations."
   },
+  "section_8": {
+    "small": "Information",
+    "title": "Information about <code>TourCoin</code>",
+    "p_1": "Here you can see all the token information, transactions, and quotations."
+  },
+  "section_9": {
+    "small": "Tokenomics",
+    "title": "Token Breakdown and Supplies",
+    "p_1": "TourCoin is a utility and governance token designed to transform your travel experiences. With a maximum supply of <code>100,000,000</code> and an innovative token burn mechanism <code>(TRC)</code>, <code>TourCoin</code> offers scarcity, stability, and community engagement. Join the financial tourism revolution with <code>TourCoin</code>, where every token is a step towards your dream journey.",
+    "li_1": "Development funds 8%",
+    "li_2": "Airdrops and community 18%",
+    "li_3": "Staking 13%",
+    "li_4": "Liquidity provider 16%",
+    "li_5": "Team 9%",
+    "li_6": "Marketing 4%",
+    "li_7": "Expansion 8%",
+    "li_8": "Liquidity funds 10%",
+    "li_9": "Lockup 8%",
+    "li_10": "Pre-sale 6%",
+    "card_title": "TourCoin Token Contract",
+    "Network": "Network",
+    "Contrato": "Contract",
+    "Nombre": "Name",
+    "Simbolo": "Symbol",
+    "img_url": "https://ik.imagekit.io/mrprwema7/Tour%20Coin/ingles_oHKvgNPfl.webp?updatedAt=1715865890837"
+  },
 
   "footer": {
     "title_1": "The Company",
