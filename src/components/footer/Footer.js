@@ -114,8 +114,8 @@ export const Footer = () => {
         <small>
           {" "}
           &copy; {new Date().getFullYear()}, made with ❤ by{" "}
-          <a target="_blank" href="https://www.ourmarket.com.ar">
-            OurMarket
+          <a target="_blank" href="https://www.bitcrest.tech">
+            BitCrest
           </a>
         </small>
       </div>
