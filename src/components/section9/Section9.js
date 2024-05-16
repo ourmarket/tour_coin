@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
+import { useState } from "react";
 import styles from "./section9.module.css";
 import { motion } from "framer-motion";
 
@@ -51,6 +52,16 @@ export const Section9 = ({ translations }) => {
     Simbolo,
     img_url,
   } = translations;
+
+  const [copy, setCopy] = useState(false);
+
+  const clipboard = () => {
+    navigator.clipboard.writeText("0x34B08ccf9620aEd6d158BaE65e85Bb3bBe2c384A");
+    setCopy(true);
+    setTimeout(() => {
+      setCopy(false);
+    }, 2000); // Reiniciar el estado "copiado" después de 2 segundos
+  };
 
   return (
     <section className={styles.container} id="tokenomics">
@@ -147,8 +158,9 @@ export const Section9 = ({ translations }) => {
               <p>
                 <strong>{Contrato}</strong>
               </p>
-              <div className={styles.contract}>
+              <div className={styles.contract} onClick={() => clipboard()}>
                 0x34B08ccf9620aEd6d158BaE65e85Bb3bBe2c384A
+                {copy && <span className={styles.clipboard}>Copiado!</span>}
               </div>
             </div>
             <div className={styles.row}>
