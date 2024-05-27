@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { useState } from "react";
 import styles from "./section8.module.css";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -18,54 +17,50 @@ const data = [
     name: "Claudio Garrigo",
     p_1: "Co-Founder | CCO",
     p_2: "TourCoin Co-founder",
-    linkedIn: "",
-    img: "https://ik.imagekit.io/mrprwema7/Tour%20Coin/caleb_1Nv0OTi0x.png?updatedAt=1715605851290",
+    linkedIn: "https://www.linkedin.com/in/claudio-garrigo-81a479305/",
+    img: "https://ik.imagekit.io/mrprwema7/Tour%20Coin/New_Project__1_-removebg-preview%20(5)_d7VWRgdOm.png?updatedAt=1716395469759",
   },
   {
     name: "Hernán Moneta",
-    p_1: "Director Tecnológico | CTO",
-    p_2: "TourCoin Director Tecnológico",
+    p_1: "Chief Technology Officer | CTO",
+    p_2: "TourCoin Chief Technology Officer",
     linkedIn: "https://www.linkedin.com/in/hernan-moneta/",
     img: "https://ik.imagekit.io/mrprwema7/Tour%20Coin/hernan2_RiUU4ENzo.png?updatedAt=1715608344527",
   },
   {
     name: "Johanna Graciano",
-    p_1: "Director financiero | CFO",
-    p_2: " TourCoin Director financiero",
+    p_1: "Chief Financial Officer | CFO",
+    p_2: "TourCoin Chief Financial Officer",
     linkedIn: "https://www.linkedin.com/in/johanna-graciano-7a418a147/",
     img: "https://ik.imagekit.io/mrprwema7/Tour%20Coin/Jo_gra2_Bt5bIOeWo.png?updatedAt=1715610182255",
   },
   {
     name: "Johanna Garrigo",
-    p_1: "Director de marketing | CMO",
-    p_2: " TourCoin Director de marketing",
-    linkedIn: "",
-    img: "https://ik.imagekit.io/mrprwema7/Tour%20Coin/Jo_gra2_Bt5bIOeWo.png?updatedAt=1715610182255",
+    p_1: "Chief Marketing Officer | CMO",
+    p_2: "TourCoin Chief Marketing Officer",
+    linkedIn: "https://www.linkedin.com/in/johannagarrigo",
+    img: "https://ik.imagekit.io/mrprwema7/Tour%20Coin/johanna_garr_6eDkutWaq.png?updatedAt=1716818551138",
   },
   {
     name: "Sabrina Garrigo",
-    p_1: "Jefe desarrollo de negocio",
-    p_2: " TourCoin Jefe desarrollo de negocio",
-    linkedIn: "",
-    img: "https://ik.imagekit.io/mrprwema7/Tour%20Coin/Jo_gra2_Bt5bIOeWo.png?updatedAt=1715610182255",
+    p_1: "Head of Business Development",
+    p_2: "TourCoin Head of Business Development",
+    linkedIn: "https://www.linkedin.com/in/sabri-garrigo-638a8a30a",
+    img: "https://ik.imagekit.io/mrprwema7/Tour%20Coin/sabrina_garr_rnIXeUadZ.png?updatedAt=1716820780116",
   },
 ];
 
 export const Section8 = ({ translations }) => {
   const { small, title, p_1 } = translations;
-  const [screen, setScreen] = useState(0);
+
   return (
     <section className={styles.container} id="info">
       <div className={styles.limit}>
-        <small>Nuestro Equipo</small>
-        <h2>
-          Conozca quiénes están detrás <br /> de todo este trabajo
-        </h2>
-        <p>
-          Nuestro equipo está compuesto por expertos globales y profesionales
-          apasionados cuya motivación y<br /> dedicación a su trabajo es
-          fundamental para el éxito de <strong>TourCoin</strong>.
-        </p>
+        <small>{small}</small>
+        <h2 dangerouslySetInnerHTML={{ __html: title }} />
+
+        <p dangerouslySetInnerHTML={{ __html: p_1 }} />
+
         <div className={styles.wrapper}>
           <div className={styles.cards_container}>
             {data.map((item) => {

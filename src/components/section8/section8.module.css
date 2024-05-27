@@ -55,7 +55,7 @@
 }
 .individual_img {
   max-width: 208px;
-  background-color: #010101;
+  background-color: transparent;
   border-radius: 50%;
 }
 
@@ -107,6 +107,16 @@
   color: #959595;
   font-size: 12px;
   margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .cards_container {
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .cards_container {
+    gap: 50px;
+  }
 }
 @keyframes rotation {
   0% {
