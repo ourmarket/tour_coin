@@ -53,7 +53,7 @@ const data = [
     name: "Sabrina Garrigo",
     p_1: "Head of Business Development",
     p_2: "TourCoin Head of Business Development",
-    linkedIn: "www.linkedin.com/in/sabrina-garrigo",
+    linkedIn: "https://www.linkedin.com/in/sabrina-garrigo",
     img: "https://ik.imagekit.io/mrprwema7/Tour%20Coin/sabrina_garr_rnIXeUadZ.png?updatedAt=1716820780116",
   },
 ];
