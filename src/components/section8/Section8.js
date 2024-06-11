@@ -20,14 +20,7 @@ const data = [
     linkedIn: "https://www.linkedin.com/in/claudio-garrigo/",
     img: "https://ik.imagekit.io/mrprwema7/Tour%20Coin/New_Project__1_-removebg-preview%20(5)_d7VWRgdOm.png?updatedAt=1716395469759",
   },
-  {
-    name: "Gladys Molina",
-    p_1: "Chief Strategy Officer | CSO",
-    p_2: "TourCoin Chief Strategy Officer",
-    linkedIn:
-      "https://www.linkedin.com/in/gladys-molina-780728312/",
-    img: "https://ik.imagekit.io/mrprwema7/Tour%20Coin/gladys_ZidBIG6Sd.png?updatedAt=1716896421188",
-  },
+  
   {
     name: "Hernán Moneta",
     p_1: "Chief Technology Officer | CTO",
