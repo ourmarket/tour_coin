@@ -15,8 +15,8 @@
     "buy": "Comunidad"
   },
   "banner_services": {
-    "title": "Servicios",
-    "sub_title": "Estos son parte de los servicios de la comunidad <code>TourCoin</code>, donde podrás vivir momentos inolvidables."
+    "title": "Alianzas",
+    "sub_title": "Estos son las alianzas de la comunidad <code>TourCoin</code>, que te ayudaran a vivir momentos inolvidables."
   },
   "navbar": {
     "Home": "Inicio",
@@ -55,7 +55,7 @@
     "text_4": "Como comprar TourCoin(TRC) con Bnb.",
     "button": "Ver tutorial",
     "video_1": "https://www.youtube.com/embed/JfXlbgXhmis",
-    "video_2": "https://www.youtube.com/embed/1qUpHidyEw4",
+    "video_2": "https://www.youtube.com/embed/vAxr4I1-6YY",
     "video_3": "https://www.youtube.com/embed/MB0ywuS3CmA",
     "video_4": "https://www.youtube.com/embed/HSV0At2kftY"
   },
@@ -64,9 +64,15 @@
     "h2": "Departamentos",
     "p_1": "Estos son nuestros departamentos en Celso Ramos, Brasil."
   },
+  "section_1_services_nav": {
+    "li_1": "Todos",
+    "li_2": "Alojamientos",
+    "li_3": "Servicios",
+    "li_4": "Gastronomía"
+  },
   "section_1_services_rooms": {
-    "consult": "Consultar precios y disponibilidad",
-    "airbnb": "Ver en Airbnb"
+    "consult": "Contacto",
+    "airbnb": "Instagram"
   },
 
   "section_1_community": {

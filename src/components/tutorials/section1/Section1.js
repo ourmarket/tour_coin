@@ -122,7 +122,7 @@ export const Section1 = ({ translations }) => {
               </div>
             </div>
           </div>
-          <div className={styles.flex}>
+          {/*  <div className={styles.flex}>
             <div className={styles.wrapper}>
               <motion.h3
                 initial={"initial"}
@@ -182,7 +182,7 @@ export const Section1 = ({ translations }) => {
                 alt="tour_coin"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       {video && (

@@ -65,7 +65,7 @@ const Menu = ({ translate, setMobile }) => {
             </Link>
           </li>
           <li>
-            <Link href="/services" onClick={() => setMobile(false)}>
+            <Link href="/alliances" onClick={() => setMobile(false)}>
               {Actives}
             </Link>
           </li>
@@ -212,7 +212,7 @@ export const Navbar = ({
                 </Link>
               </li>
               <li>
-                <Link href="/services" onClick={() => setMobile(false)}>
+                <Link href="/alliances" onClick={() => setMobile(false)}>
                   {Actives}
                 </Link>
               </li>

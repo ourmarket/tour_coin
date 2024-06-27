@@ -56,7 +56,7 @@
     "text_4": "Como comprar TourCoin (TRC) com Bnb.",
     "button": "Ver tutorial",
     "video_1": "https://www.youtube.com/embed/JfXlbgXhmis",
-    "video_2": "https://www.youtube.com/embed/1qUpHidyEw4",
+    "video_2": "https://www.youtube.com/embed/k90inGSHS78",
     "video_3": "https://www.youtube.com/embed/MB0ywuS3CmA",
     "video_4": "https://www.youtube.com/embed/HSV0At2kftY"
   },
@@ -74,6 +74,13 @@
     "h2": "Departamentos",
     "p_1": "Estes são nossos departamentos em Celso Ramos, Brasil."
   },
+  "section_1_services_nav": {
+    "li_1": "Todos",
+    "li_2": "Alojamentos",
+    "li_3": "Serviços",
+    "li_4": "Gastronomia"
+  },
+
   "section_1_services_rooms": {
     "consult": "Consultar preços e disponibilidade",
     "airbnb": "Ver no Airbnb"
