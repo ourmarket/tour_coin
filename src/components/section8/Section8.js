@@ -17,17 +17,10 @@ const data = [
     name: "Claudio Garrigo",
     p_1: "Co-Founder | CCO",
     p_2: "TourCoin Co-founder",
-    linkedIn: "https://www.linkedin.com/in/claudio-garrigo-81a479305/",
+    linkedIn: "https://www.linkedin.com/in/claudio-garrigo/",
     img: "https://ik.imagekit.io/mrprwema7/Tour%20Coin/New_Project__1_-removebg-preview%20(5)_d7VWRgdOm.png?updatedAt=1716395469759",
   },
-  {
-    name: "Gladys Molina",
-    p_1: "Chief Strategy Officer | CSO",
-    p_2: "TourCoin Chief Strategy Officer",
-    linkedIn:
-      "https://br.linkedin.com/in/gladys-molina-a7610730a?trk=people-guest_people_search-card",
-    img: "https://ik.imagekit.io/mrprwema7/Tour%20Coin/gladys_ZidBIG6Sd.png?updatedAt=1716896421188",
-  },
+  
   {
     name: "Hernán Moneta",
     p_1: "Chief Technology Officer | CTO",
@@ -53,7 +46,7 @@ const data = [
     name: "Sabrina Garrigo",
     p_1: "Head of Business Development",
     p_2: "TourCoin Head of Business Development",
-    linkedIn: "https://www.linkedin.com/in/sabri-garrigo-638a8a30a",
+    linkedIn: "https://www.linkedin.com/in/sabrina-garrigo",
     img: "https://ik.imagekit.io/mrprwema7/Tour%20Coin/sabrina_garr_rnIXeUadZ.png?updatedAt=1716820780116",
   },
 ];
