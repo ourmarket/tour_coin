@@ -117,74 +117,72 @@ const OtherCategory = ({ data, translations }) => {
   const defaultMapZoom = 13;
 
   return (
-    <div className={styles.limit}>
-      <h1>{data.title}</h1>
-      <div className={styles.flex_container} ref={leftDetailRef}>
-        <div className={styles.left_detail}>
-          <img src={data.images[0]} alt="department" />
-        </div>
-        <div className={styles.right_detail}>
-          <MapProvider>
+    <MapProvider>
+      <div className={styles.limit}>
+        <h1>{data.title}</h1>
+        <div className={styles.flex_container} ref={leftDetailRef}>
+          <div className={styles.left_detail}>
+            <img src={data.images[0]} alt="department" />
+          </div>
+          <div className={styles.right_detail}>
             <Maps
               defaultMapContainerStyle={defaultMapContainerStyle}
               defaultMapCenter={defaultMapCenter}
               defaultMapZoom={defaultMapZoom}
               marker={true}
             />
-          </MapProvider>
-        </div>
-      </div>
-      <div className={styles.slider}>
-        <CardSlider images={data.images} />
-      </div>
-      <div className={styles.info}>
-        <div className={styles.left}>
-          <h2>{data.sub_title}</h2>
-          <p>{data.details}</p>
-          <div className={styles.divider}>
-            <p style={{ marginBottom: "5px" }}>
-              <strong>{data.service_1}</strong>
-            </p>
-            <p>{data.service_1_1}</p>
-            <br />
-            <p style={{ marginBottom: "5px" }}>
-              <strong>{data.service_2}</strong>
-            </p>
-            <p>{data.service_2_1}</p>
-            <br />
           </div>
         </div>
-        <div className={styles.right}>
-          <h3>{translations.consult}</h3>
-          <a href={data.link_whatsapp} target="_blank">
-            <button className={styles.btn}>WhatsApp</button>
-          </a>
-          <a href={data.link_instagram} target="_blank">
-            <button className={styles.btn}>Instagram</button>
-          </a>
-          {data?.link_tiktok && (
-            <a href={data.link_tiktok} target="_blank">
-              <button className={styles.btn}>TikTok</button>
-            </a>
-          )}
-          {data?.link_web && (
-            <a href={data.link_web} target="_blank">
-              <button className={styles.btn}>Web</button>
-            </a>
-          )}
+        <div className={styles.slider}>
+          <CardSlider images={data.images} />
         </div>
-      </div>
-      <div className={styles.map_mobile}>
-        <MapProvider>
+        <div className={styles.info}>
+          <div className={styles.left}>
+            <h2>{data.sub_title}</h2>
+            <p>{data.details}</p>
+            <div className={styles.divider}>
+              <p style={{ marginBottom: "5px" }}>
+                <strong>{data.service_1}</strong>
+              </p>
+              <p>{data.service_1_1}</p>
+              <br />
+              <p style={{ marginBottom: "5px" }}>
+                <strong>{data.service_2}</strong>
+              </p>
+              <p>{data.service_2_1}</p>
+              <br />
+            </div>
+          </div>
+          <div className={styles.right}>
+            <h3>{translations.consult}</h3>
+            <a href={data.link_whatsapp} target="_blank">
+              <button className={styles.btn}>WhatsApp</button>
+            </a>
+            <a href={data.link_instagram} target="_blank">
+              <button className={styles.btn}>Instagram</button>
+            </a>
+            {data?.link_tiktok && (
+              <a href={data.link_tiktok} target="_blank">
+                <button className={styles.btn}>TikTok</button>
+              </a>
+            )}
+            {data?.link_web && (
+              <a href={data.link_web} target="_blank">
+                <button className={styles.btn}>Web</button>
+              </a>
+            )}
+          </div>
+        </div>
+        <div className={styles.map_mobile}>
           <Maps
             defaultMapContainerStyle={defaultMapContainerStyle}
             defaultMapCenter={defaultMapCenter}
             defaultMapZoom={defaultMapZoom}
             marker={true}
           />
-        </MapProvider>
+        </div>
       </div>
-    </div>
+    </MapProvider>
   );
 };
 
