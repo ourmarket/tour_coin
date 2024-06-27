@@ -17,7 +17,7 @@ import { Maps } from "../googleMap/Maps";
 import { useDispatch, useSelector } from "react-redux";
 import { setActive, setAlliances, setInActive } from "@/redux/mapSlice";
 
-export const CardSlider = ({ images, data }) => {
+export const CardSlider = ({ images, data, isMobile }) => {
   const dispatch = useDispatch();
 
   const handleMouseEnter = () => {
@@ -33,7 +33,9 @@ export const CardSlider = ({ images, data }) => {
       <Link href={`/alliances/${data.id}`}>
         <div
           className={
-            data.active ? styles.image_container_active : styles.image_container
+            data.active && !isMobile
+              ? styles.image_container_active
+              : styles.image_container
           }
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
@@ -43,7 +45,7 @@ export const CardSlider = ({ images, data }) => {
             pagination={true}
             mousewheel={true}
             keyboard={true}
-            navigation={true}
+            navigation={!isMobile}
             loop={true}
             modules={[Navigation, Pagination, Mousewheel]}
             className="mySwiper"
@@ -74,6 +76,7 @@ export const Section1 = () => {
   const { alliances } = useSelector((store) => store.alliances);
 
   const [data, setData] = useState([]);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const cookies = document.cookie;
@@ -107,6 +110,24 @@ export const Section1 = () => {
     }
   }, []);
 
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const handleMediaQueryChange = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    // Set initial value
+    setIsMobile(mediaQuery.matches);
+
+    // Add listener
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    // Clean up listener on component unmount
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
   const defaultMapContainerStyle = {
     width: "100%",
     height: mapContainerHeight,
@@ -128,7 +149,12 @@ export const Section1 = () => {
             <div className={styles.left}>
               {alliances.map((item) => {
                 return (
-                  <CardSlider key={item.id} images={item.images} data={item} />
+                  <CardSlider
+                    key={item.id}
+                    images={item.images}
+                    data={item}
+                    isMobile={isMobile}
+                  />
                 );
               })}
             </div>

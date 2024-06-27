@@ -204,12 +204,9 @@
   }
 }
 
-/* @media (max-width: 574px) {
-  .container {
-    padding: 50px 20px;
-    padding-bottom: 30px;
+@media (max-width: 600px) {
+  .image_container:hover {
+    border: 1px solid #5a5a5a;
+    margin-left: 3px;
   }
-  .card {
-    padding: 20px 10px;
-  }
-} */
+}
