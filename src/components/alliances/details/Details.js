@@ -94,14 +94,16 @@ const Accommodation = ({ data, translations }) => {
 };
 const OtherCategory = ({ data, translations }) => {
   const leftDetailRef = useRef(null);
-  const [mapContainerHeight, setMapContainerHeight] = useState("37vh"); // Default height
+  const [mapContainerHeight, setMapContainerHeight] = useState("442px"); // Default height
 
   useEffect(() => {
+    console.log(leftDetailRef);
+    console.log(leftDetailRef.current);
     if (leftDetailRef.current) {
       const leftDetailHeight = leftDetailRef.current.offsetHeight;
       setMapContainerHeight(`${leftDetailHeight}px`);
     }
-  }, [data.images]); // Ensure this effect runs when images are loaded/changed
+  }, []);
 
   const defaultMapContainerStyle = {
     width: "100%",
@@ -116,12 +118,14 @@ const OtherCategory = ({ data, translations }) => {
 
   const defaultMapZoom = 13;
 
+  console.log(mapContainerHeight);
+
   return (
     <MapProvider>
       <div className={styles.limit}>
         <h1>{data.title}</h1>
-        <div className={styles.flex_container} ref={leftDetailRef}>
-          <div className={styles.left_detail}>
+        <div className={styles.flex_container}>
+          <div className={styles.left_detail} ref={leftDetailRef}>
             <img src={data.images[0]} alt="department" />
           </div>
           <div className={styles.right_detail}>

@@ -72,6 +72,9 @@
   border: 1px solid #313131;
   border-radius: 10px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .left_detail img {
   width: 100%;
