@@ -162,7 +162,10 @@
     flex-flow: column-reverse;
   }
   .left {
-    width: 100%;
+    width: 101%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
   .right {
     width: 100%;
@@ -207,6 +210,5 @@
 @media (max-width: 600px) {
   .image_container:hover {
     border: 1px solid #5a5a5a;
-    margin-left: 3px;
   }
 }
