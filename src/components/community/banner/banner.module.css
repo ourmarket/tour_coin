@@ -210,6 +210,12 @@
   .banner_video {
     display: none;
   }
+  .animation_two {
+    display: none;
+  }
+  .animation_three {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .banner_section {
