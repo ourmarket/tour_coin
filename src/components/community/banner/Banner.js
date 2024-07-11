@@ -4,6 +4,7 @@
 import Link from "next/link";
 import styles from "./banner.module.css";
 import { motion } from "framer-motion";
+import { useMobile } from "@/hooks/useMobile";
 
 const menuAnimate = {
   initial: { opacity: 0, y: -50 },
@@ -22,6 +23,7 @@ const fadeIn = {
 };
 
 export const Banner = ({ title, button, buy }) => {
+  const { isMobile } = useMobile();
   return (
     <section
       className={styles.banner_section}
@@ -64,52 +66,54 @@ export const Banner = ({ title, button, buy }) => {
                 <h1 variants={menuAnimate}>{buy}</h1>
                 <h6 variants={menuAnimate}>{title}</h6>
               </div>
-              <div className={styles.banner_video}>
-                <div className={styles.banner_video_container}>
-                  <div className={styles.video_one}>
-                    <video
-                      className={styles.video_bg}
-                      autoPlay
-                      loop
-                      muted
-                      preload="true"
-                    >
-                      <source
-                        type="video/mp4"
-                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/subir%201_Q04Ergrlz.mp4?updatedAt=1712930690206"
-                      />
-                    </video>
-                  </div>
-                  <div className={styles.video_two}>
-                    <video
-                      className={styles.video_bg}
-                      autoPlay
-                      loop
-                      muted
-                      preload="true"
-                    >
-                      <source
-                        type="video/mp4"
-                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/V%C3%ADdeo%20sin%20t%C3%ADtulo%20_%20Hecho%20con%20Clipchamp%20(online-video-cutter.com)%20(1)%20(1)_hKoQxSwo_m.mp4?updatedAt=1712935926598"
-                      />
-                    </video>
-                  </div>
-                  <div className={styles.video_three}>
-                    <video
-                      className={styles.video_bg}
-                      autoPlay
-                      loop
-                      muted
-                      preload="true"
-                    >
-                      <source
-                        type="video/mp4"
-                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/tc_final_7e6hWkGWni.mp4?updatedAt=1714572036023"
-                      />
-                    </video>
+              {!isMobile && (
+                <div className={styles.banner_video}>
+                  <div className={styles.banner_video_container}>
+                    <div className={styles.video_one}>
+                      <video
+                        className={styles.video_bg}
+                        autoPlay
+                        loop
+                        muted
+                        preload="true"
+                      >
+                        <source
+                          type="video/mp4"
+                          src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/subir%201_Q04Ergrlz.mp4?updatedAt=1712930690206"
+                        />
+                      </video>
+                    </div>
+                    <div className={styles.video_two}>
+                      <video
+                        className={styles.video_bg}
+                        autoPlay
+                        loop
+                        muted
+                        preload="true"
+                      >
+                        <source
+                          type="video/mp4"
+                          src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/V%C3%ADdeo%20sin%20t%C3%ADtulo%20_%20Hecho%20con%20Clipchamp%20(online-video-cutter.com)%20(1)%20(1)_hKoQxSwo_m.mp4?updatedAt=1712935926598"
+                        />
+                      </video>
+                    </div>
+                    <div className={styles.video_three}>
+                      <video
+                        className={styles.video_bg}
+                        autoPlay
+                        loop
+                        muted
+                        preload="true"
+                      >
+                        <source
+                          type="video/mp4"
+                          src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/tc_final_7e6hWkGWni.mp4?updatedAt=1714572036023"
+                        />
+                      </video>
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>

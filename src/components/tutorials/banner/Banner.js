@@ -1,9 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-
-import Link from "next/link";
 import styles from "./banner.module.css";
-import { motion } from "framer-motion";
 
 const menuAnimate = {
   initial: { opacity: 0, y: -50 },
@@ -13,15 +10,9 @@ const menuAnimate = {
     transition: { duration: 1 },
   },
 };
-const fadeIn = {
-  initial: { opacity: 0 },
-  animate: {
-    opacity: 1,
-    transition: { duration: 1 },
-  },
-};
 
 export const Banner = ({ title, button, buy }) => {
+  const { isMobile } = useMobile();
   return (
     <section
       className={styles.banner_section}
@@ -64,52 +55,54 @@ export const Banner = ({ title, button, buy }) => {
                 <h1 variants={menuAnimate}>{buy}</h1>
                 <h6 variants={menuAnimate}>{title}</h6>
               </div>
-              <div className={styles.banner_video}>
-                <div className={styles.banner_video_container}>
-                  <div className={styles.video_one}>
-                    <video
-                      className={styles.video_bg}
-                      autoPlay
-                      loop
-                      muted
-                      preload="true"
-                    >
-                      <source
-                        type="video/mp4"
-                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/WhatsApp%20Video%202024-02-29%20at%2016.28.42_44tSAUIKp.mp4?updatedAt=1709240267366"
-                      />
-                    </video>
-                  </div>
-                  <div className={styles.video_two}>
-                    <video
-                      className={styles.video_bg}
-                      autoPlay
-                      loop
-                      muted
-                      preload="true"
-                    >
-                      <source
-                        type="video/mp4"
-                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/WhatsApp%20Video%202024-02-29%20at%2017.43.40_NAiCGoPzP.mp4?updatedAt=1709240237086"
-                      />
-                    </video>
-                  </div>
-                  <div className={styles.video_three}>
-                    <video
-                      className={styles.video_bg}
-                      autoPlay
-                      loop
-                      muted
-                      preload="true"
-                    >
-                      <source
-                        type="video/mp4"
-                        src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/WhatsApp%20Video%202024-02-29%20at%2018.22.41_5MZuVsXDX.mp4?updatedAt=1709242961619"
-                      />
-                    </video>
+              {!isMobile && (
+                <div className={styles.banner_video}>
+                  <div className={styles.banner_video_container}>
+                    <div className={styles.video_one}>
+                      <video
+                        className={styles.video_bg}
+                        autoPlay
+                        loop
+                        muted
+                        preload="true"
+                      >
+                        <source
+                          type="video/mp4"
+                          src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/WhatsApp%20Video%202024-02-29%20at%2016.28.42_44tSAUIKp.mp4?updatedAt=1709240267366"
+                        />
+                      </video>
+                    </div>
+                    <div className={styles.video_two}>
+                      <video
+                        className={styles.video_bg}
+                        autoPlay
+                        loop
+                        muted
+                        preload="true"
+                      >
+                        <source
+                          type="video/mp4"
+                          src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/WhatsApp%20Video%202024-02-29%20at%2017.43.40_NAiCGoPzP.mp4?updatedAt=1709240237086"
+                        />
+                      </video>
+                    </div>
+                    <div className={styles.video_three}>
+                      <video
+                        className={styles.video_bg}
+                        autoPlay
+                        loop
+                        muted
+                        preload="true"
+                      >
+                        <source
+                          type="video/mp4"
+                          src="https://ik.imagekit.io/mrprwema7/Tour%20Coin/WhatsApp%20Video%202024-02-29%20at%2018.22.41_5MZuVsXDX.mp4?updatedAt=1709242961619"
+                        />
+                      </video>
+                    </div>
                   </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>
