@@ -30,11 +30,13 @@ export const Section9_index = () => {
   const Nombre = t("Nombre");
   const Simbolo = t("Simbolo");
   const img_url = t("img_url");
+  const p_2 = t.raw("p_2");
 
   const translations = {
     small,
     title,
     p_1,
+    p_2,
     li_1,
     li_2,
     li_3,

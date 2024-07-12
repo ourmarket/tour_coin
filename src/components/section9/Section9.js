@@ -51,6 +51,7 @@ export const Section9 = ({ translations }) => {
     Nombre,
     Simbolo,
     img_url,
+    p_2,
   } = translations;
 
   const [copy, setCopy] = useState(false);
@@ -186,6 +187,7 @@ export const Section9 = ({ translations }) => {
             <img src={img_url} alt="Tokenomics" />
           </motion.div>
         </div>
+        <div dangerouslySetInnerHTML={{ __html: p_2 }} />
       </div>
     </section>
   );

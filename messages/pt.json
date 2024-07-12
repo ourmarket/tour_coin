@@ -166,6 +166,7 @@
     "small": "Tokenomics",
     "title": "Desagregação de tokens e suprimentos",
     "p_1": "TourCoin é um token de utilidade e governança projetado para transformar suas experiências de viagem. Com um fornecimento máximo de <code>100.000.000</code> e um mecanismo inovador de queima de tokens <code>(TRC)</code>, <code>TourCoin</code> oferece escassez, estabilidade e engajamento comunitário. Junte-se à revolução financeira do turismo com <code>TourCoin</code>, onde cada token é um passo em direção à sua jornada dos sonhos.",
+    "p_2": "<p>As carteiras <a href='https://bscscan.com/address/0xeebf0956f0a9e1bb5920a487653a5b16cee86856#readContract' target='_blank'> 0xEEBF0956F0A9e1BB5920A487653a5B16cEE86856 </a> (com 77,77% dos tokens), e <a href='https://bscscan.com/address/0xe5b1f26989b7b6a518f2f783a890093df7b78dc7#readContract' target='_blank'> 0xe5b1f26989B7b6A518F2f783a890093Df7b78dC7 </a> (com 3,03% dos tokens) estão bloqueadas e só liberam 0,64% e 0,16% do fornecimento total a cada 30 dias.</p>",
     "li_1": "Fundos de desenvolvimento 8%",
     "li_2": "Airdrops e comunidade 18%",
     "li_3": "Staking 13%",
