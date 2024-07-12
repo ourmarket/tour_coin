@@ -1,9 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-import Link from "next/link";
 import styles from "./banner.module.css";
-import { motion } from "framer-motion";
 
 const menuAnimate = {
   initial: { opacity: 0, y: -50 },

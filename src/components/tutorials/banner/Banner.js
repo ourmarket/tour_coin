@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
+import { useMobile } from "@/hooks/useMobile";
 import styles from "./banner.module.css";
 
 const menuAnimate = {
