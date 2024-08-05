@@ -9,6 +9,7 @@ import { IoMdClose } from "react-icons/io";
 import { AnimatePresence, motion } from "framer-motion";
 import LanguageChanger from "../languageChanger/LanguageChanger";
 import { useRouter, usePathname } from "../../navigation";
+import Marquee from "../marquee/Marquee";
 
 const Menu = ({ translate, setMobile }) => {
   const {
@@ -155,6 +156,9 @@ export const Navbar = ({
   back,
   buy,
   Community,
+  volume,
+  liquidity,
+  marquee,
 }) => {
   const [mobile, setMobile] = useState(false);
 
@@ -170,15 +174,22 @@ export const Navbar = ({
     back,
     buy,
     Community,
+    volume,
+    liquidity,
   };
+  const [isVisible, setIsVisible] = useState(marquee);
   return (
     <header>
       <AnimatePresence>
         {mobile && <Menu translate={translate} setMobile={setMobile} />}
       </AnimatePresence>
+      {isVisible && (
+        <Marquee setIsVisible={setIsVisible} translate={translate} />
+      )}
 
       <motion.nav
         className={styles.navbar}
+        style={{ top: `${isVisible ? "40px" : "0px"}` }}
         initial={{ opacity: 0 }}
         animate={{
           opacity: 1,

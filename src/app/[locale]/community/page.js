@@ -7,7 +7,7 @@ import { Section4_index } from "@/components/community/section4";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Navbar_index />
+      <Navbar_index marquee={true} />
       <Banner_index />
       <Section4_index />
       <Footer />

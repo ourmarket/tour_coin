@@ -8,7 +8,7 @@ import { NavbarServices_index } from "@/components/alliances/navbar";
 export default function Page() {
   return (
     <main className={styles.main}>
-      <Navbar_index />
+      <Navbar_index marquee={false} />
       <NavbarServices_index />
       <Section1_index />
       <Footer />

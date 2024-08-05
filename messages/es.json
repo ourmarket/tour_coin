@@ -31,6 +31,10 @@
     "back": "Volver",
     "buy": "Como comprar"
   },
+  "marquee": {
+    "volume": "- Volumen 24hs",
+    "liquidity": "- Liquidez"
+  },
   "section_1": {
     "title_1": "¿Qué es un <code>TourCoin</code> y cómo funciona?",
     "title_2": "¿Cómo comprar y utilizar <code>TourCoin</code>?",

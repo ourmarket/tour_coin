@@ -6,16 +6,31 @@ import Providers from "@/redux/Provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "TourCoin - Your Guide to Travel and Cryptocurrency",
-  description:
-    "Explore the world of travel and cryptocurrency with TourCoin. Learn about blockchain-powered travel solutions, discover new destinations, and earn rewards.",
-  icons: {
-    icon: "/icon.png",
-  },
-};
+async function fetchTitle() {
+  const res = await fetch(
+    "https://api.dexscreener.com/latest/dex/tokens/0x34B08ccf9620aEd6d158BaE65e85Bb3bBe2c384A",
+    { next: { revalidate: 60 } }
+  );
+  const data = await res.json();
+  return data?.pairs[0]?.priceUsd || "";
+}
 
-export default function RootLayout({ children, params: { locale } }) {
+export async function generateMetadata() {
+  const price = await fetchTitle();
+
+  return {
+    title: `TRC $${price} - Your Guide to Travel and Cryptocurrency`,
+    description:
+      "Explore the world of travel and cryptocurrency with TourCoin. Learn about blockchain-powered travel solutions, discover new destinations, and earn rewards.",
+    icons: {
+      icon: "/icon.png",
+    },
+  };
+}
+
+export default async function RootLayout({ children, params: { locale } }) {
+  const data = await fetchTitle();
+
   return (
     <html lang={locale}>
       <head>
@@ -38,6 +53,7 @@ export default function RootLayout({ children, params: { locale } }) {
         <div>
           <Whatsapp />
         </div>
+
         <Providers>{children}</Providers>
       </body>
     </html>
