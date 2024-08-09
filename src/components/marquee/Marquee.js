@@ -30,7 +30,7 @@ const Marquee = ({ setIsVisible, translate }) => {
                   </span>{" "}
                   {translate.liquidity}{" "}
                   <span style={{ color: "greenyellow" }}>
-                    ${pairs[0].liquidity?.usd || ""}
+                    ${pairs[0]?.liquidity?.usd || ""}
                   </span>
                 </span>
                 <span>
@@ -46,7 +46,7 @@ const Marquee = ({ setIsVisible, translate }) => {
                   </span>{" "}
                   {translate.liquidity}{" "}
                   <span style={{ color: "greenyellow" }}>
-                    ${pairs[1].liquidity?.usd || ""}
+                    ${pairs[1]?.liquidity?.usd || ""}
                   </span>
                 </span>
               </>
