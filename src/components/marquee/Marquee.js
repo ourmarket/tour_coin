@@ -3,7 +3,9 @@ import { useFetch } from "@/hooks/useFetch";
 import styles from "./Marquee.module.css";
 
 const Marquee = ({ setIsVisible, translate }) => {
-  const { data, loading, error } = useFetch();
+  const { data, loading, error } = useFetch(
+    "0x34B08ccf9620aEd6d158BaE65e85Bb3bBe2c384A"
+  );
 
   const pairs = data?.pairs || [];
 
