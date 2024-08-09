@@ -29,8 +29,6 @@ export async function generateMetadata() {
 }
 
 export default async function RootLayout({ children, params: { locale } }) {
-  const data = await fetchTitle();
-
   return (
     <html lang={locale}>
       <head>
