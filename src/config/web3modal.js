@@ -23,9 +23,8 @@ export const config = defaultWagmiConfig({
   metadata,
   ssr: true,
   transports: {
-    [mainnet.id]: http(),
-    [bscTestnet.id]: http("https://data-seed-prebsc-2-s3.bnbchain.org:8545"),
     [bsc.id]: http(),
+    [bscTestnet.id]: http("https://data-seed-prebsc-2-s3.bnbchain.org:8545"),
   },
   storage: createStorage({
     storage: cookieStorage,
