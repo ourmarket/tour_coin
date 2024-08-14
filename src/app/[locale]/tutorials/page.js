@@ -7,7 +7,8 @@ import { Section1_index } from "@/components/tutorials/section1";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Navbar_index />
+      <Navbar_index marquee={true} languageReload={false} />
+
       <Banner_index />
       <Section1_index />
       <Footer />

@@ -179,9 +179,11 @@
   font-family: var(--font_4);
   font-weight: bold;
   color: var(--color-white);
+  white-space: nowrap;
 }
 .menu_mobile_links li a {
   color: var(--color-white);
+  white-space: nowrap;
 }
 .btn_close {
   position: absolute;
@@ -190,7 +192,7 @@
   color: var(--color-white);
   z-index: 999999;
 }
-@media (max-width: 1120px) {
+@media (max-width: 1220px) {
   .links {
     gap: 15px;
   }

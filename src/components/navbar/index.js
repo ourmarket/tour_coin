@@ -1,14 +1,14 @@
 import { Navbar } from "./Navbar";
 import { useTranslations } from "next-intl";
 
-export const Navbar_index = ({ marquee }) => {
+export const Navbar_index = ({ marquee, languageReload }) => {
   const t = useTranslations("navbar");
   const t_1 = useTranslations("marquee");
 
   return (
     <Navbar
       Home={t("Home")}
-      TourCoin={t("TourCoin")}
+      profile={t("profile")}
       About={t("About")}
       Actives={t("Actives")}
       Language={t("Language")}
@@ -21,6 +21,7 @@ export const Navbar_index = ({ marquee }) => {
       volume={t_1("volume")}
       liquidity={t_1("liquidity")}
       marquee={marquee}
+      languageReload={languageReload}
     />
   );
 };

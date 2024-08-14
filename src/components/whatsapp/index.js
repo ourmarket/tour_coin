@@ -12,6 +12,7 @@ export const Whatsapp = () => {
           width={70}
           height={70}
           alt="whatsapp"
+          className={styles.image}
         />
       </a>
     </div>

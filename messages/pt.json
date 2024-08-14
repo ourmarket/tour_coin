@@ -21,7 +21,7 @@
 
   "navbar": {
     "Home": "Início",
-    "TourCoin": "TourCoin",
+    "profile": "Meu perfil",
     "About": "Missão",
     "Actives": "Alianças",
     "Community": "Comunidade",
@@ -204,5 +204,8 @@
     "link_8": "https://www.calameo.com/read/007620210d856d881a881",
     "link_9": "https://www.canva.com/design/DAF7WoNEMYo/OaxxoiJzFt8ax5342ZpMFQ/view?utm_content=DAF7WoNEMYo&utm_campaign=designshare&utm_medium=link&utm_source=editor#4",
     "link_10": "Como comprar"
+  },
+  "profile": {
+    "connect": "Conecte sua carteira"
   }
 }
