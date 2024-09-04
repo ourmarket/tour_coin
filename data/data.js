@@ -149,27 +149,7 @@ export const es = [
     category: "services",
   },
 
-  {
-    id: "008",
-    title: "Illa gastro bar",
-    sub_title: "Restaurante y bar, Brasil",
-    details: "Gastronomía",
-    service_1: "✔ Restaurante y bar",
-    service_1_1:
-      "🍝 | Alta gastronomia! , ❤️‍🔥 | A sua melhor experiência em Gov. Celso Ramos!,💎 | Sofisticação, qualidade e uma vista incrível!, 👉 | Faça sua reserva!👉",
-
-    link_instagram: "https://www.instagram.com/illa.gastrobar/",
-    link_whatsapp:
-      "https://api.whatsapp.com/message/FJISN62AGDBSD1?autoload=1&app_absent=0",
-    images: [
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/illa_i90paFAAt.png?updatedAt=1717773439237",
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/illa_i90paFAAt.png?updatedAt=1717773439237",
-    ],
-    lat: -26.961281057803376,
-    lng: -48.6265402118707,
-    active: false,
-    category: "gastronomy",
-  },
+  
   {
     id: "009",
     title: "Maycon Parapentes",
@@ -519,27 +499,7 @@ export const en = [
     active: false,
     category: "services",
   },
-  {
-    id: "008",
-    title: "Illa gastro bar",
-    sub_title: "Restaurant and bar, Brazil",
-    details: "Gastronomy",
-    service_1: "✔ Restaurant and bar",
-    service_1_1:
-      "🍝 | Fine dining! , ❤️‍🔥 | Your best experience in Gov. Celso Ramos!, 💎 | Sophistication, quality, and an incredible view!, 👉 | Make your reservation!👉",
-
-    link_instagram: "https://www.instagram.com/illa.gastrobar/",
-    link_whatsapp:
-      "https://api.whatsapp.com/message/FJISN62AGDBSD1?autoload=1&app_absent=0",
-    images: [
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/illa_i90paFAAt.png?updatedAt=1717773439237",
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/illa_i90paFAAt.png?updatedAt=1717773439237",
-    ],
-    lat: -26.961281057803376,
-    lng: -48.6265402118707,
-    active: false,
-    category: "gastronomy",
-  },
+  
   {
     id: "009",
     title: "Maycon Parapentes",
@@ -888,27 +848,7 @@ export const pt = [
     category: "services",
   },
 
-  {
-    id: "008",
-    title: "Illa gastro bar",
-    sub_title: "Restaurante e bar, Brasil",
-    details: "Gastronomia",
-    service_1: "✔ Restaurante e bar",
-    service_1_1:
-      "🍝 | Alta gastronomia! , ❤️‍🔥 | Sua melhor experiência em Gov. Celso Ramos!,💎 | Sofisticação, qualidade e uma vista incrível!, 👉 | Faça sua reserva!👉",
-
-    link_instagram: "https://www.instagram.com/illa.gastrobar/",
-    link_whatsapp:
-      "https://api.whatsapp.com/message/FJISN62AGDBSD1?autoload=1&app_absent=0",
-    images: [
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/illa_i90paFAAt.png?updatedAt=1717773439237",
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/illa_i90paFAAt.png?updatedAt=1717773439237",
-    ],
-    lat: -26.961281057803376,
-    lng: -48.6265402118707,
-    active: false,
-    category: "gastronomy",
-  },
+ 
   {
     id: "009",
     title: "Maycon Parapentes",
