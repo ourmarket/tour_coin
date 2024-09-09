@@ -324,30 +324,7 @@ export const es = [
     active: false,
     category: "accommodation",
   },
-  {
-    id: "012",
-    title: "Carancho",
-    sub_title: "Restaurante, Villa Traful, Argentina",
-    details: "Restaurante",
-    service_1: "✔ Ofrece descuento pagando con TourCoin",
-    service_1_1: "Restaurante en Villa Traful.",
-
-    link_instagram: "https://www.instagram.com/_carancho",
-    link_tiktok: null,
-    link_web: null,
-    link_whatsapp:
-      "https://api.whatsapp.com/send/?phone=542944551360&text&type=phone_number&app_absent=0",
-    images: [
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/logo2_JOoSfjpD_.webp?updatedAt=1720805137526",
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/2%20(1)_aIesrzxZw.webp?updatedAt=1720805217093",
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/3%20(1)_TX-NVa7R2.webp?updatedAt=1720805217411",
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/3%20(2)_MC1aQkClx.webp?updatedAt=1720805217332",
-    ],
-    lat: -40.658807007844196,
-    lng: -71.39000627301762,
-    active: false,
-    category: "gastronomy",
-  },
+ 
 ];
 
 export const en = [
@@ -671,29 +648,7 @@ export const en = [
     active: false,
     category: "accommodation",
   },
-  {
-    id: "012",
-    title: "Carancho",
-    sub_title: "Restaurant, Villa Traful, Argentina",
-    details: "Restaurant",
-    service_1: "✔ Offers discount when paying with TourCoin",
-    service_1_1: "Restaurant in Villa Traful.",
-    link_instagram: "https://www.instagram.com/_carancho",
-    link_tiktok: null,
-    link_web: null,
-    link_whatsapp:
-      "https://api.whatsapp.com/send/?phone=542944551360&text&type=phone_number&app_absent=0",
-    images: [
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/logo2_JOoSfjpD_.webp?updatedAt=1720805137526",
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/2%20(1)_aIesrzxZw.webp?updatedAt=1720805217093",
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/3%20(1)_TX-NVa7R2.webp?updatedAt=1720805217411",
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/3%20(2)_MC1aQkClx.webp?updatedAt=1720805217332",
-    ],
-    lat: -40.658807007844196,
-    lng: -71.39000627301762,
-    active: false,
-    category: "gastronomy",
-  },
+  
 ];
 
 export const pt = [
@@ -1022,27 +977,5 @@ export const pt = [
     active: false,
     category: "accommodation",
   },
-  {
-    id: "012",
-    title: "Carancho",
-    sub_title: "Restaurante, Villa Traful, Argentina",
-    details: "Restaurante",
-    service_1: "✔ Oferece desconto pagando com TourCoin",
-    service_1_1: "Restaurante em Villa Traful.",
-    link_instagram: "https://www.instagram.com/_carancho",
-    link_tiktok: null,
-    link_web: null,
-    link_whatsapp:
-      "https://api.whatsapp.com/send/?phone=542944551360&text&type=phone_number&app_absent=0",
-    images: [
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/logo2_JOoSfjpD_.webp?updatedAt=1720805137526",
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/2%20(1)_aIesrzxZw.webp?updatedAt=1720805217093",
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/3%20(1)_TX-NVa7R2.webp?updatedAt=1720805217411",
-      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/aliances/3%20(2)_MC1aQkClx.webp?updatedAt=1720805217332",
-    ],
-    lat: -40.658807007844196,
-    lng: -71.39000627301762,
-    active: false,
-    category: "gastronomy",
-  },
+  
 ];
