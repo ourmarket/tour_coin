@@ -15,7 +15,7 @@ export const config = defaultWagmiConfig({
   projectId,
   ssr: true,
   transports: {
-    [bsc.id]: http(),
+    [bsc.id]: http("https://binance.llamarpc.com"),
     [bscTestnet.id]: http("https://data-seed-prebsc-2-s3.bnbchain.org:8545"),
   },
   storage: createStorage({
