@@ -12,7 +12,11 @@ async function fetchTitle() {
     { next: { revalidate: 60 } }
   );
   const data = await res.json();
-  return data?.pairs[0]?.priceUsd || "";
+  if (data.pairs) {
+    return `$${data?.pairs[0]?.priceUsd}`;
+  } else {
+    return "";
+  }
 }
 
 export async function generateMetadata() {
