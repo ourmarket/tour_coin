@@ -23,7 +23,7 @@ export async function generateMetadata() {
   const price = await fetchTitle();
 
   return {
-    title: `TRC $${price} - Your Guide to Travel and Cryptocurrency`,
+    title: `TRC ${price} - Your Guide to Travel and Cryptocurrency`,
     description:
       "Explore the world of travel and cryptocurrency with TourCoin. Learn about blockchain-powered travel solutions, discover new destinations, and earn rewards.",
     icons: {
