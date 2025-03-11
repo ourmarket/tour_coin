@@ -13,6 +13,7 @@ export const Whatsapp = () => {
           height={70}
           alt="whatsapp"
           className={styles.image}
+          priority
         />
       </a>
     </div>

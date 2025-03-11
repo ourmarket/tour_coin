@@ -1,8 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-import { Whatsapp } from "@/components/whatsapp";
-import Providers from "@/redux/Provider";
+import ClientLayout from "./ClientLayout";
+import { headers } from "next/headers";
+import Web3ModalProvider from "@/context/Web3ModalProvider_new";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,6 +34,7 @@ export async function generateMetadata() {
 }
 
 export default async function RootLayout({ children, params: { locale } }) {
+  const cookies = headers().get("cookie");
   return (
     <html lang={locale}>
       <head>
@@ -49,14 +51,17 @@ export default async function RootLayout({ children, params: { locale } }) {
             gtag('config', 'G-2ZWLLXWXD0');
           `}
         </Script>
+        <Script
+          src="https://accounts.google.com/gsi/client"
+          strategy="beforeInteractive"
+          async
+        />
       </head>
 
       <body className={inter.className}>
-        <div>
-          <Whatsapp />
-        </div>
-
-        <Providers>{children}</Providers>
+        <ClientLayout>
+          <Web3ModalProvider>{children}</Web3ModalProvider>
+        </ClientLayout>
       </body>
     </html>
   );

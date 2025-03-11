@@ -1,54 +1,57 @@
 // redux/balanceSlice.js
+import { decimalLimit } from "@/utils/decimalLimit";
 import { createSlice } from "@reduxjs/toolkit";
 
 const balanceSlice = createSlice({
   name: "balance",
   initialState: {
+    TRCPrice: 0,
+    BNBPrice: 0,
     amountBNB: 0,
     amountTRC: 0,
-    account: null,
-    tokenBalance: null,
-    bnbBalance: null,
-    web3: null,
+    errorBalance: null,
+    isLoading: false,
   },
   reducers: {
+    setTRCPrice(state, action) {
+      console.log(+action.payload);
+      state.TRCPrice = +action.payload;
+    },
+    setBNBPrice(state, action) {
+      state.BNBPrice = +action.payload;
+    },
     setAmountBNB(state, action) {
-      state.amountBNB = action.payload;
+      state.amountBNB = decimalLimit(+action.payload);
     },
     setAmountTRC(state, action) {
-      state.amountTRC = action.payload;
+      state.amountTRC = decimalLimit(+action.payload);
     },
-    setWeb3(state, action) {
-      state.web3 = action.payload;
+    setErrorBalance(state, action) {
+      state.errorBalance = action.payload;
     },
-    setAccount(state, action) {
-      state.account = action.payload;
+    setIsLoadingBalance(state, action) {
+      state.isLoading = action.payload;
     },
-    setTokenBalance(state, action) {
-      state.tokenBalance = action.payload;
-    },
-    setBnbBalance(state, action) {
-      state.bnbBalance = action.payload;
-    },
+
     clearBalances(state) {
+      state.TRCPrice = 0;
+      state.BNBPrice = 0;
       state.amountBNB = 0;
       state.amountTRC = 0;
-      state.account = null;
-      state.tokenBalance = null;
-      state.bnbBalance = null;
-      state.web3 = null;
+      state.errorBalance = null;
+      state.isLoading = null;
     },
   },
 });
 
 export const {
-  setWeb3,
-  setAccount,
-  setTokenBalance,
-  setBnbBalance,
+  setErrorBalance,
   clearBalances,
   setAmountBNB,
   setAmountTRC,
+  setIsLoadingBalance,
+  setTRCPrice,
+  setBNBPrice,
 } = balanceSlice.actions;
 
 export default balanceSlice.reducer;

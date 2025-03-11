@@ -149,7 +149,6 @@ export const es = [
     category: "services",
   },
 
-  
   {
     id: "009",
     title: "Maycon Parapentes",
@@ -324,7 +323,6 @@ export const es = [
     active: false,
     category: "accommodation",
   },
- 
 ];
 
 export const en = [
@@ -476,7 +474,7 @@ export const en = [
     active: false,
     category: "services",
   },
-  
+
   {
     id: "009",
     title: "Maycon Parapentes",
@@ -648,7 +646,24 @@ export const en = [
     active: false,
     category: "accommodation",
   },
-  
+  {
+    id: "012",
+    title: "Praia da Cruz",
+    sub_title: "Praia da Cruz, Brasil",
+    details: "Playa",
+    service_1: "✔ Accepts TourCoin as a payment method",
+    service_1_1:
+      "Playa tranquila y de aguas cristalinas, perfecta para quienes buscan escapar del bullicio y disfrutar de un entorno natural sereno.",
+    link_instagram: null,
+    link_tiktok: null,
+    link_web: null,
+    link_whatsapp: null,
+    images: [],
+    lat: -40.38747810267026,
+    lng: -71.24417644001475,
+    active: false,
+    category: "accommodation",
+  },
 ];
 
 export const pt = [
@@ -803,7 +818,6 @@ export const pt = [
     category: "services",
   },
 
- 
   {
     id: "009",
     title: "Maycon Parapentes",
@@ -977,5 +991,4 @@ export const pt = [
     active: false,
     category: "accommodation",
   },
-  
 ];

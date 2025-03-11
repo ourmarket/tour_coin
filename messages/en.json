@@ -30,7 +30,8 @@
     "English": "English",
     "Portuguese": "Portuguese",
     "back": "Back",
-    "buy": "How to buy"
+    "buy": "How to buy",
+    "login": "Login"
   },
   "marquee": {
     "volume": "- Volume 24hs",
@@ -83,7 +84,9 @@
     "li_1": "All",
     "li_2": "Accommodations",
     "li_3": "Services",
-    "li_4": "Restaurants"
+    "li_4": "Restaurants",
+    "li_5": "Activities",
+    "li_6": "Accept TRC"
   },
   "section_1_services_rooms": {
     "consult": "Check prices and availability",
@@ -207,5 +210,42 @@
   },
   "profile": {
     "connect": "Connect your wallet"
+  },
+
+  "banner_home": {
+    "banner_1_1400": "https://ik.imagekit.io/mrprwema7/Tour%20Coin/banners/1400_en_FBKRaw5ccY.png?updatedAt=1736948928219",
+    "banner_2_1400": "https://ik.imagekit.io/mrprwema7/Tour%20Coin/banners/2_1400_pt_8AgQR8crMt.webp?updatedAt=1730300371103",
+    "banner_1_530": "https://ik.imagekit.io/mrprwema7/Tour%20Coin/banners/530_en_9ciWUlLzZ0.png?updatedAt=1736948549748",
+    "banner_2_530": "https://ik.imagekit.io/mrprwema7/Tour%20Coin/banners/2_530_pt_E3xrDG-cOf.webp?updatedAt=1730300371370"
+  },
+
+  "home": {
+    "title": "What do you want to do?",
+    "placeholder": "Places to go, things to do...",
+    "button": "Search",
+    "recommendation": "Recommendation",
+    "empty_recommendation": "⚠️ No results for that search",
+    "small_1": "Recommendations",
+    "title_2": "Recommended Places",
+    "p_1": "These are the places we recommend from TourCoin."
+  },
+  "alliance_pay": {
+    "pay": "Pay",
+    "pay_p": "From here you can pay with your TRC tokens",
+    "label_1": "Local Currency",
+    "label_2": "Amount in local currency",
+    "label_3": "Amount to pay",
+    "label_4": "Available",
+    "pay_btn": "Pay",
+    "error": "There was an error transferring the tokens"
+  },
+  "PaymentModal": {
+    "title": "Confirm the payment",
+    "sent_to": "Send to:",
+    "pay_btn": "Pay",
+    "loading": "Processing the payment",
+    "send": "Sending",
+    "receipt": "Transaction receipt",
+    "BscScan": "View on BscScan:"
   }
 }

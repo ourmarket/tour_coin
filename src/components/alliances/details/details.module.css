@@ -97,7 +97,25 @@
   flex: 1.2;
 }
 .right {
+  display: flex;
+  flex-direction: column;
   flex: 0.8;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+.payment {
+  width: 100%;
+  border: 1px solid #313131;
+  border-radius: 10px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+
+  align-self: start;
+  padding-bottom: 40px;
+}
+.card_right {
+  width: 100%;
   border: 1px solid #313131;
   border-radius: 10px;
   padding: 25px;
@@ -107,6 +125,52 @@
   gap: 30px;
   align-self: start;
   padding-bottom: 40px;
+}
+.payment h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.payment p {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: rgb(124, 124, 124);
+}
+.input {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input input,
+.input select,
+.row_50 input {
+  padding: 10px;
+  border-radius: 5px;
+}
+.row {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.row_50 {
+  width: 50%;
+}
+.row_50 input {
+  width: 100%;
+  background-color: var(--color-black5);
+  border: none;
+  color: var(--color-yellow);
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+}
+.row_50 label {
+  text-align: center;
+  display: block;
+  margin-bottom: 3px;
 }
 
 .btn {
@@ -119,6 +183,11 @@
   border-radius: 10px;
   border: none;
   cursor: pointer;
+}
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: var(--color-black5);
+  color: #636161;
 }
 .btn a {
   color: var(--color-black);
@@ -144,6 +213,81 @@
   border-radius: 10px;
   overflow: hidden;
 }
+
+/* ---------modal pago ok-----------*/
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999999;
+}
+.success {
+  background-color: var(--color-black5);
+  border-radius: 10px;
+  padding: 60px 20px;
+  min-width: 300px;
+  max-width: 600px;
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  border: 1px solid #414141;
+}
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--color-white);
+  background-color: transparent;
+  border: none;
+}
+.text {
+  margin-top: 30px;
+}
+.link {
+  white-space: nowrap; /* Evita que el texto haga salto de línea */
+  overflow: hidden; /* Oculta el contenido que excede el ancho */
+  text-overflow: ellipsis; /* Muestra los tres puntos al final */
+  width: 270px; /* Define el ancho del contenedor */
+}
+.modal_title {
+  border-bottom: 1px solid #313131;
+  padding-bottom: 20px;
+  width: 90%;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.flex_gap {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  color: var(--color-yellow);
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex: 0.8;
+  gap: 30px;
+  margin-bottom: 80px;
+  border: 1px solid #313131;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .container {
     min-height: 100vb;

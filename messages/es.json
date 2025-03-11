@@ -29,7 +29,8 @@
     "English": "Ingles",
     "Portuguese": "Portugués",
     "back": "Volver",
-    "buy": "Como comprar"
+    "buy": "Como comprar",
+    "login": "Ingresar"
   },
   "marquee": {
     "volume": "- Volumen 24hs",
@@ -72,7 +73,9 @@
     "li_1": "Todos",
     "li_2": "Alojamientos",
     "li_3": "Servicios",
-    "li_4": "Gastronomía"
+    "li_4": "Gastronomía",
+    "li_5": "Actividades",
+    "li_6": "Acepta TRC"
   },
   "section_1_services_rooms": {
     "consult": "Contacto",
@@ -206,5 +209,40 @@
   },
   "profile": {
     "connect": "Conecta tu wallet"
+  },
+  "banner_home": {
+    "banner_1_1400": "https://ik.imagekit.io/mrprwema7/Tour%20Coin/banners/1400_es_59TnGP0aaq.png?updatedAt=1736948230942",
+    "banner_2_1400": "https://ik.imagekit.io/mrprwema7/Tour%20Coin/banners/2_1400_es_6HwuIWPDn.webp?updatedAt=1730300371374",
+    "banner_1_530": "https://ik.imagekit.io/mrprwema7/Tour%20Coin/banners/530_es_WYkQQAUxwf.png?updatedAt=1736948291937",
+    "banner_2_530": "https://ik.imagekit.io/mrprwema7/Tour%20Coin/banners/1%20_530_es_r67OhGPfB.webp?updatedAt=1730300371972"
+  },
+  "home": {
+    "title": "Que quieres hacer?",
+    "placeholder": "Lugares donde ir, cosas que hacer...",
+    "button": "Buscar",
+    "recommendation": "Recomendación",
+    "empty_recommendation": "⚠️ No hay resultados para esa búsqueda",
+    "small_1": "Recomendaciones",
+    "title_2": "Lugares recomendados",
+    "p_1": "Estos son los lugares que te recomendamos desde TourCoin."
+  },
+  "alliance_pay": {
+    "pay": "Pagar",
+    "pay_p": "Desde aquí puedes pagar con tus tokens TRC",
+    "label_1": "Moneda Local",
+    "label_2": "Monto en moneda local",
+    "label_3": "Cantidad a pagar",
+    "label_4": "Disponible",
+    "pay_btn": "Pagar",
+    "error": "Hubo un error al transferir los tokens"
+  },
+  "PaymentModal": {
+    "title": "Confirma el pago",
+    "sent_to": "Enviar a:",
+    "pay_btn": "Pagar",
+    "loading": "Procesando el pago",
+    "send": "Enviando",
+    "receipt": "Recibo de la transacción",
+    "BscScan": "Ver en BscScan:"
   }
 }

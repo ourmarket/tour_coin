@@ -4,12 +4,11 @@ import { Link } from "../../navigation";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { AnimatePresence, motion } from "framer-motion";
-import LanguageChanger from "../languageChanger/LanguageChanger";
 import LanguageChangerReload from "../languageChanger/LanguageChangerReload";
 import Marquee from "../marquee/Marquee";
 import styles from "./navbar.module.css";
-import { Menu } from "./Menu";
 import { MenuReload } from "./MenuReload";
+import { FaUserCircle } from "react-icons/fa";
 
 export const Navbar = ({
   Home,
@@ -26,7 +25,6 @@ export const Navbar = ({
   volume,
   liquidity,
   marquee,
-  languageReload,
 }) => {
   const [mobile, setMobile] = useState(false);
 
@@ -46,6 +44,7 @@ export const Navbar = ({
     liquidity,
   };
   const [isVisible, setIsVisible] = useState(marquee);
+
   return (
     <header>
       <AnimatePresence>
@@ -66,6 +65,9 @@ export const Navbar = ({
         }}
       >
         <div className={styles.container}>
+          <div className={styles.links_mobile} onClick={() => setMobile(true)}>
+            <IoMenu size={"2.5rem"} color={"#f9ba32"} />
+          </div>
           <div className={styles.center}>
             <Link href={"/"}>
               <Image
@@ -85,9 +87,17 @@ export const Navbar = ({
                   {Home}
                 </Link>
               </li>
+              <li>
+                <Link href="/tourCoin" onClick={() => setMobile(false)}>
+                  TourCoin
+                </Link>
+              </li>
 
               <li>
-                <Link href="/alliances" onClick={() => setMobile(false)}>
+                <Link
+                  href="/alliances?category=all"
+                  onClick={() => setMobile(false)}
+                >
                   {Actives}
                 </Link>
               </li>
@@ -95,11 +105,6 @@ export const Navbar = ({
               <li>
                 <Link href="/community" onClick={() => setMobile(false)}>
                   {Community}
-                </Link>
-              </li>
-              <li>
-                <Link href="/profile" onClick={() => setMobile(false)}>
-                  {profile}
                 </Link>
               </li>
 
@@ -110,11 +115,13 @@ export const Navbar = ({
           </div>
           <div>
             <button className={styles.btn_buy}>
-              <Link href="/tutorials">{buy}</Link>
+              <Link href="/profile">{profile}</Link>
             </button>
           </div>
-          <div className={styles.links_mobile} onClick={() => setMobile(true)}>
-            <IoMenu size={"3rem"} color={"#f9ba32"} />
+          <div className={styles.links_mobile}>
+            <Link href="/profile">
+              <FaUserCircle size={"1.9rem"} color={"#f9ba32"} />
+            </Link>
           </div>
         </div>
       </motion.nav>

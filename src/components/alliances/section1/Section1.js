@@ -9,28 +9,36 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { Link } from "@/navigation";
-import { es, en, pt } from "../../../../data/data";
 import { useEffect, useRef, useState } from "react";
-
 import { MapProvider } from "../googleMap/MapProvider";
 import { Maps } from "../googleMap/Maps";
 import { useDispatch, useSelector } from "react-redux";
-import { setActive, setAlliances, setInActive } from "@/redux/mapSlice";
+import {
+  setActive,
+  setAlliances,
+  setClearAllianceActive,
+  setInActive,
+  setInActiveAll,
+} from "@/redux/mapSlice";
+import { AiOutlineExpand } from "react-icons/ai";
+import { MdOutlineArrowBack } from "react-icons/md";
+import { toggleMap } from "@/redux/uiSlice";
+import { Footer } from "@/components/footer/Footer";
 
-export const CardSlider = ({ images, data, isMobile }) => {
+export const CardSlider = ({ images, data, isMobile, locale }) => {
   const dispatch = useDispatch();
 
   const handleMouseEnter = () => {
-    dispatch(setActive(data.id));
+    dispatch(setActive(data.allianceId));
   };
 
   const handleMouseLeave = () => {
-    dispatch(setInActive(data.id));
+    dispatch(setInActive(data.allianceId));
   };
 
   return (
     <div className={styles.card}>
-      <Link href={`/alliances/${data.id}`}>
+      <Link href={`/alliances/${data.allianceId}`}>
         <div
           className={
             data.active && !isMobile
@@ -62,40 +70,42 @@ export const CardSlider = ({ images, data, isMobile }) => {
           </Swiper>
         </div>
       </Link>
-      <h3>
-        <strong>{data.title}</strong>
+      <h3 style={{ textAlign: "center" }}>
+        <strong>{data.localization[locale].title}</strong>
       </h3>
-      <p style={{ fontWeight: 300 }}>{data.sub_title}</p>
+      <p style={{ fontWeight: 300, textAlign: "center" }}>
+        {data.localization[locale].sub_title}
+      </p>
     </div>
   );
 };
 
-export const Section1 = () => {
+export const Section1 = ({ dataApi }) => {
   const dispatch = useDispatch();
+  const { fullMap } = useSelector((store) => store.ui);
 
-  const { alliances } = useSelector((store) => store.alliances);
+  const { alliancesDisplay } = useSelector((store) => store.alliances);
 
   const [data, setData] = useState([]);
+
   const [isMobile, setIsMobile] = useState(false);
 
+  const cookies = document.cookie;
+
+  const locale = cookies
+    .split("; ")
+    .find((row) => row.startsWith("NEXT_LOCALE"))
+    .split("=")[1];
+
   useEffect(() => {
-    const cookies = document.cookie;
-
-    const locale = cookies
-      .split("; ")
-      .find((row) => row.startsWith("NEXT_LOCALE"))
-      .split("=")[1];
-
-    if (locale === "es") {
-      setData(es);
-    }
-    if (locale === "en") {
-      setData(en);
-    }
-    if (locale === "pt") {
-      setData(pt);
-    }
-  }, []);
+    const dataMap = dataApi.map((item) => {
+      return {
+        ...item,
+        active: false,
+      };
+    });
+    setData(dataMap);
+  }, [dataApi]);
 
   useEffect(() => {
     dispatch(setAlliances(data));
@@ -105,10 +115,13 @@ export const Section1 = () => {
   const mapHeight = useRef(null);
 
   useEffect(() => {
-    if (mapHeight.current) {
+    if (mapHeight.current && !fullMap) {
       setMapContainerHeight(`${mapHeight.current.offsetHeight}px`);
+    } else {
+      // 100vh - 145px
+      setMapContainerHeight("calc(100dvh - 145px)");
     }
-  }, []);
+  }, [fullMap]);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 768px)");
@@ -139,38 +152,93 @@ export const Section1 = () => {
     lng: -48.548254433122885,
   };
 
-  const defaultMapZoom = 4;
+  const defaultMapZoom = fullMap ? 12 : 5;
 
   return (
     <>
       <section className={styles.container}>
         <div className={styles.limit}>
-          <div className={styles.wrapper}>
-            <div className={styles.left}>
-              {alliances.map((item) => {
-                return (
-                  <CardSlider
-                    key={item.id}
-                    images={item.images}
-                    data={item}
-                    isMobile={isMobile}
-                  />
-                );
-              })}
+          {fullMap && (
+            <div className={styles.map_absolute_full} ref={mapHeight}>
+              {fullMap && (
+                <div
+                  className={styles.full_screen_icon}
+                  onClick={() => {
+                    dispatch(toggleMap());
+                    dispatch(setClearAllianceActive());
+                    dispatch(setInActiveAll());
+                  }}
+                >
+                  <MdOutlineArrowBack size={30} />
+                </div>
+              )}
+              {!fullMap && (
+                <div
+                  className={styles.full_screen_icon}
+                  onClick={() => dispatch(toggleMap())}
+                >
+                  <AiOutlineExpand size={30} />
+                </div>
+              )}
+
+              <MapProvider>
+                <Maps
+                  defaultMapContainerStyle={defaultMapContainerStyle}
+                  defaultMapCenter={defaultMapCenter}
+                  defaultMapZoom={defaultMapZoom}
+                  marker={false}
+                  locale={locale}
+                />
+              </MapProvider>
             </div>
-            <div className={styles.right}>
-              <div className={styles.map_absolute} ref={mapHeight}>
-                <MapProvider>
-                  <Maps
-                    defaultMapContainerStyle={defaultMapContainerStyle}
-                    defaultMapCenter={defaultMapCenter}
-                    defaultMapZoom={defaultMapZoom}
-                    marker={false}
-                  />
-                </MapProvider>
+          )}
+          {!fullMap && (
+            <div className={styles.wrapper}>
+              <div className={styles.left}>
+                {alliancesDisplay.map((item) => {
+                  return (
+                    <CardSlider
+                      key={item.allianceId}
+                      images={item.images}
+                      data={item}
+                      isMobile={isMobile}
+                      locale={locale}
+                    />
+                  );
+                })}
+              </div>
+              <div className={styles.right}>
+                <div className={styles.map_absolute} ref={mapHeight}>
+                  {fullMap && (
+                    <div
+                      className={styles.full_screen_icon}
+                      onClick={() => dispatch(toggleMap())}
+                    >
+                      <MdOutlineArrowBack size={30} />
+                    </div>
+                  )}
+                  {!fullMap && (
+                    <div
+                      className={styles.full_screen_icon}
+                      onClick={() => dispatch(toggleMap())}
+                    >
+                      <AiOutlineExpand size={30} />
+                    </div>
+                  )}
+
+                  <MapProvider>
+                    <Maps
+                      defaultMapContainerStyle={defaultMapContainerStyle}
+                      defaultMapCenter={defaultMapCenter}
+                      defaultMapZoom={defaultMapZoom}
+                      marker={false}
+                      locale={locale}
+                    />
+                  </MapProvider>
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </section>
     </>

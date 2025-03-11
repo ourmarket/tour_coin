@@ -30,7 +30,8 @@
     "English": "Inglês",
     "Portuguese": "Português",
     "back": "Voltar",
-    "buy": "Como comprar"
+    "buy": "Como comprar",
+    "login": "Conecte-se"
   },
   "marquee": {
     "volume": "- Volume 24hs",
@@ -82,7 +83,9 @@
     "li_1": "Todos",
     "li_2": "Alojamentos",
     "li_3": "Serviços",
-    "li_4": "Gastronomia"
+    "li_4": "Gastronomia",
+    "li_5": "Atividades",
+    "li_6": "Aceite TRC"
   },
 
   "section_1_services_rooms": {
@@ -207,5 +210,41 @@
   },
   "profile": {
     "connect": "Conecte sua carteira"
+  },
+  "banner_home": {
+    "banner_1_1400": "https://ik.imagekit.io/mrprwema7/Tour%20Coin/banners/1400_pt_JOZ0gx9S_S.png?updatedAt=1736948928166",
+    "banner_2_1400": "https://ik.imagekit.io/mrprwema7/Tour%20Coin/banners/2_1400_en_QNqvGrAAfM.webp?updatedAt=1730300371488",
+    "banner_1_530": "https://ik.imagekit.io/mrprwema7/Tour%20Coin/banners/530_pt_AlSXnq5Jf.png?updatedAt=1736948549839",
+    "banner_2_530": "https://ik.imagekit.io/mrprwema7/Tour%20Coin/banners/2_530_en_c6P4Pb4Ge.webp?updatedAt=1730300371159"
+  },
+
+  "home": {
+    "title": "O que você quer fazer?",
+    "placeholder": "Lugares para ir, coisas para fazer...",
+    "button": "Buscar",
+    "recommendation": "Recomendação",
+    "empty_recommendation": "⚠️ Não há resultados para essa busca",
+    "small_1": "Recomendações",
+    "title_2": "Lugares Recomendados",
+    "p_1": "Estes são os lugares que recomendamos do TourCoin."
+  },
+  "alliance_pay": {
+    "pay": "Pagar",
+    "pay_p": "Aqui você pode pagar com seus tokens TRC",
+    "label_1": "Moeda Local",
+    "label_2": "Valor em moeda local",
+    "label_3": "Quantidade a pagar",
+    "label_4": "Disponível",
+    "pay_btn": "Pagar",
+    "error": "Ocorreu um erro ao transferir os tokens"
+  },
+  "PaymentModal": {
+    "title": "Confirme o pagamento",
+    "sent_to": "Enviar para:",
+    "pay_btn": "Pagar",
+    "loading": "Processando o pagamento",
+    "send": "Enviando",
+    "receipt": "Recibo da transação",
+    "BscScan": "Ver no BscScan:"
   }
 }

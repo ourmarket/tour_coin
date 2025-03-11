@@ -18,6 +18,7 @@ export const Navbar_index = ({ marquee, languageReload }) => {
       back={t("back")}
       buy={t("buy")}
       Community={t("Community")}
+      Login={t("login")}
       volume={t_1("volume")}
       liquidity={t_1("liquidity")}
       marquee={marquee}

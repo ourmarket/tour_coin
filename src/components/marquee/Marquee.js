@@ -1,6 +1,7 @@
 "use client";
 import { useFetch } from "@/hooks/useFetch";
 import styles from "./Marquee.module.css";
+import { Fragment } from "react";
 
 const Marquee = ({ setIsVisible, translate }) => {
   const { data, loading, error } = useFetch(
@@ -18,7 +19,7 @@ const Marquee = ({ setIsVisible, translate }) => {
           !loading &&
           repeat.map((item) => {
             return (
-              <>
+              <Fragment key={item}>
                 <span>
                   {" "}
                   | TRC/WBNB
@@ -51,7 +52,7 @@ const Marquee = ({ setIsVisible, translate }) => {
                     ${pairs[1]?.liquidity?.usd || ""}
                   </span>
                 </span>
-              </>
+              </Fragment>
             );
           })}
       </div>
