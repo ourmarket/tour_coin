@@ -291,25 +291,27 @@ const BannerSearch = ({ translations }) => {
               modules={[Autoplay, Navigation, Pagination, Mousewheel]}
             >
               <SwiperSlide>
-                <div className={styles.banner_img}>
-                  <img
-                    src={
-                      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/banners/Agregar%20un%20t%C3%ADtulo%20(1)_hmO1nXY5w.webp?updatedAt=1730982493151"
-                    }
-                    alt="tourCoin"
-                  />
-                </div>
+                <Link href="/tutorials">
+                  <div className={styles.banner_img}>
+                    <img
+                      src={
+                        "https://ik.imagekit.io/mrprwema7/Tour%20Coin/banners/Agregar%20un%20t%C3%ADtulo%20(1)_hmO1nXY5w.webp?updatedAt=1730982493151"
+                      }
+                      alt="tourCoin"
+                    />
+                  </div>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
                 <div className={styles.banner_img}>
                   <img src={banner_1_1400} alt="tourCoin" />
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
+              {/*  <SwiperSlide>
                 <div className={styles.banner_img}>
                   <img src={banner_2_1400} alt="tourCoin" />
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
             </Swiper>
           </div>
           <div className={styles.banner_mobile}>
@@ -327,25 +329,27 @@ const BannerSearch = ({ translations }) => {
               modules={[Autoplay, Navigation, Pagination, Mousewheel]}
             >
               <SwiperSlide>
-                <div className={styles.banner_img}>
-                  <img
-                    src={
-                      "https://ik.imagekit.io/mrprwema7/Tour%20Coin/banners/Tu%20pr%C3%B3xima%20aventura%20empieza%20aqu%C3%AD%20(2)_K1zmfEJKZ.webp?updatedAt=1730983961674"
-                    }
-                    alt="tourCoin"
-                  />
-                </div>
+                <Link href="/tutorials">
+                  <div className={styles.banner_img}>
+                    <img
+                      src={
+                        "https://ik.imagekit.io/mrprwema7/Tour%20Coin/banners/Tu%20pr%C3%B3xima%20aventura%20empieza%20aqu%C3%AD%20(2)_K1zmfEJKZ.webp?updatedAt=1730983961674"
+                      }
+                      alt="tourCoin"
+                    />
+                  </div>
+                </Link>
               </SwiperSlide>
               <SwiperSlide>
                 <div className={styles.banner_img}>
                   <img src={banner_1_530} alt="tourCoin" />
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <div className={styles.banner_img}>
                   <img src={banner_2_530} alt="tourCoin" />
                 </div>
-              </SwiperSlide>
+              </SwiperSlide> */}
             </Swiper>
           </div>
         </div>
