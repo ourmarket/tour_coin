@@ -291,6 +291,17 @@ const BannerSearch = ({ translations }) => {
               modules={[Autoplay, Navigation, Pagination, Mousewheel]}
             >
               <SwiperSlide>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.cryptos.tourcoin"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className={styles.banner_img}>
+                    <img src={banner_2_1400} alt="tourCoin" />
+                  </div>
+                </a>
+              </SwiperSlide>
+              <SwiperSlide>
                 <Link href="/tutorials">
                   <div className={styles.banner_img}>
                     <img
