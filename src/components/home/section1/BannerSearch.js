@@ -290,7 +290,7 @@ const BannerSearch = ({ translations }) => {
               }}
               modules={[Autoplay, Navigation, Pagination, Mousewheel]}
             >
-              <SwiperSlide>
+              {/* <SwiperSlide>
                 <a
                   href="https://play.google.com/store/apps/details?id=com.cryptos.tourcoin"
                   target="_blank"
@@ -303,7 +303,7 @@ const BannerSearch = ({ translations }) => {
                     <img src={banner_2_1400} alt="tourCoin" />
                   </div>
                 </a>
-              </SwiperSlide>
+              </SwiperSlide> */}
               <SwiperSlide>
                 <Link href="/tutorials">
                   <div className={styles.banner_img}>
@@ -342,7 +342,7 @@ const BannerSearch = ({ translations }) => {
               }}
               modules={[Autoplay, Navigation, Pagination, Mousewheel]}
             >
-              <SwiperSlide>
+             {/*  <SwiperSlide>
                 <a
                   href="https://play.google.com/store/apps/details?id=com.cryptos.tourcoin"
                   target="_blank"
@@ -355,7 +355,7 @@ const BannerSearch = ({ translations }) => {
                     <img src={banner_2_530} alt="tourCoin" />
                   </div>
                 </a>
-              </SwiperSlide>
+              </SwiperSlide> */}
               <SwiperSlide>
                 <Link href="/tutorials">
                   <div className={styles.banner_img}>
